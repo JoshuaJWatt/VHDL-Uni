@@ -1,0 +1,96 @@
+15:07:09 INFO  : Processing command line option -hwspec /home/physics/Labs/week15/week15_20190219_project1_interrupts/week15_20190219_project1_interrupts.sdk/design_1_wrapper.hdf.
+15:07:11 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:07:12 INFO  : XSDB server has started successfully.
+15:28:54 INFO  : Processing command line option -hwspec /home/physics/Labs/week15/week15_20190219_project1_interrupts/week15_20190219_project1_interrupts.sdk/design_1_wrapper.hdf.
+15:28:54 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:28:55 INFO  : XSDB server has started successfully.
+15:28:55 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+15:29:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:29:43 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week15/week15_20190219_project1_interrupts/week15_20190219_project1_interrupts.sdk/design_1_wrapper_hw_platform_0/download.bit"
+15:30:36 INFO  : Processing command line option -hwspec /home/physics/Labs/week15/week15_20190219_project1_interrupts/week15_20190219_project1_interrupts.sdk/design_1_wrapper.hdf.
+15:30:37 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:30:38 INFO  : XSDB server has started successfully.
+15:30:38 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+15:30:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:30:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:30:59 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week15/week15_20190219_project1_interrupts/week15_20190219_project1_interrupts.sdk/design_1_wrapper_hw_platform_0/download.bit"
+15:31:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:31:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:31:18 INFO  : 'fpga -state' command is executed.
+15:31:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:31:18 INFO  : Context for processor 'microblaze_0' is selected.
+15:31:18 INFO  : Processor reset is completed for 'microblaze_0'.
+15:31:18 INFO  : Context for processor 'microblaze_0' is selected.
+15:31:19 INFO  : The application '/home/physics/Labs/week15/week15_20190219_project1_interrupts/week15_20190219_project1_interrupts.sdk/Interrupt_servicing/Debug/Interrupt_servicing.elf' is downloaded to processor 'microblaze_0'.
+15:31:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+dow /home/physics/Labs/week15/week15_20190219_project1_interrupts/week15_20190219_project1_interrupts.sdk/Interrupt_servicing/Debug/Interrupt_servicing.elf
+----------------End of Script----------------
+
+15:31:19 INFO  : Context for processor 'microblaze_0' is selected.
+15:31:19 INFO  : 'con' command is executed.
+15:31:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+con
+----------------End of Script----------------
+
+15:32:38 INFO  : Disconnected from the channel tcfchan#1.
+15:32:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:32:38 INFO  : 'fpga -state' command is executed.
+15:32:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:39 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:39 INFO  : Processor reset is completed for 'microblaze_0'.
+15:32:39 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:39 INFO  : The application '/home/physics/Labs/week15/week15_20190219_project1_interrupts/week15_20190219_project1_interrupts.sdk/Interrupt_servicing/Debug/Interrupt_servicing.elf' is downloaded to processor 'microblaze_0'.
+15:32:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+dow /home/physics/Labs/week15/week15_20190219_project1_interrupts/week15_20190219_project1_interrupts.sdk/Interrupt_servicing/Debug/Interrupt_servicing.elf
+----------------End of Script----------------
+
+15:32:39 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:39 INFO  : 'con' command is executed.
+15:32:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+con
+----------------End of Script----------------
+
+15:33:27 INFO  : Disconnected from the channel tcfchan#2.
+15:33:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:33:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:33:27 INFO  : 'fpga -state' command is executed.
+15:33:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:33:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:33:50 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week15/week15_20190219_project1_interrupts/week15_20190219_project1_interrupts.sdk/design_1_wrapper_hw_platform_0/download.bit"
+15:33:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:33:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:33:56 INFO  : 'fpga -state' command is executed.
+15:33:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:33:56 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:56 INFO  : Processor reset is completed for 'microblaze_0'.
+15:33:57 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:57 INFO  : The application '/home/physics/Labs/week15/week15_20190219_project1_interrupts/week15_20190219_project1_interrupts.sdk/Interrupt_servicing/Debug/Interrupt_servicing.elf' is downloaded to processor 'microblaze_0'.
+15:33:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+dow /home/physics/Labs/week15/week15_20190219_project1_interrupts/week15_20190219_project1_interrupts.sdk/Interrupt_servicing/Debug/Interrupt_servicing.elf
+----------------End of Script----------------
+
+15:33:57 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:57 INFO  : 'con' command is executed.
+15:33:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+con
+----------------End of Script----------------
+
+15:36:23 INFO  : Disconnected from the channel tcfchan#3.
+15:36:23 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="xadc_wiz_0_synth_1" LaunchDir="/home/physics/Labs/week18/week18_20190312_project1_adcready/week18_20190312_project1_adcready.runs/xadc_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/physics/Labs/week18/week18_20190312_project1_adcready/week18_20190312_project1_adcready.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="xadc_wiz_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/physics/Labs/week18/week18_20190312_project1_adcready/week18_20190312_project1_adcready.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+	</Run>
+</Runs>
+

@@ -1,0 +1,1 @@
+-wto "906e983e41c9426e9633dfeb5e39cb30" --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "horowitz_behav" "xil_defaultlib.horowitz" -log "elaborate.log" 

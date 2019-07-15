@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Tue Mar  5 14:22:02 2019
+# Process ID: 25832
+# Log file: /home/physics/Labs/week17/week17_20190305_project1_oneled/week17_20190305_project1_oneled.runs/synth_1/oneled.vds
+# Journal file: /home/physics/Labs/week17/week17_20190305_project1_oneled/week17_20190305_project1_oneled.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source oneled.tcl -notrace

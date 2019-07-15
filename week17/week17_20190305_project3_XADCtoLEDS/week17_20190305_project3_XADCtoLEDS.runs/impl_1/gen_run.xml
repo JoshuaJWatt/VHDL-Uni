@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1551803654">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="XADCtoLEDs.vdi"/>
+  <File Type="BG-DRC" Name="XADCtoLEDs.drc"/>
+  <File Type="BG-BGN" Name="XADCtoLEDs.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="XADCtoLEDs.sysdef"/>
+  <File Type="BITSTR-MMI" Name="XADCtoLEDs.mmi"/>
+  <File Type="BITSTR-BMM" Name="XADCtoLEDs_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="XADCtoLEDs.nky"/>
+  <File Type="BITSTR-RBT" Name="XADCtoLEDs.rbt"/>
+  <File Type="BITSTR-MSK" Name="XADCtoLEDs.msk"/>
+  <File Type="BG-BIN" Name="XADCtoLEDs.bin"/>
+  <File Type="BG-BIT" Name="XADCtoLEDs.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="XADCtoLEDs_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="XADCtoLEDs_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="XADCtoLEDs_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="XADCtoLEDs_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="XADCtoLEDs_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="XADCtoLEDs_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="XADCtoLEDs_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="XADCtoLEDs_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="XADCtoLEDs_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="XADCtoLEDs_route_status.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="XADCtoLEDs_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="XADCtoLEDs_power_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="XADCtoLEDs_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="XADCtoLEDs_drc_routed.rpt"/>
+  <File Type="ROUTE-DCP" Name="XADCtoLEDs_routed.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="XADCtoLEDs_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="XADCtoLEDs_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="XADCtoLEDs_postplace_pwropt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="XADCtoLEDs_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="XADCtoLEDs_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="XADCtoLEDs_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="XADCtoLEDs_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="XADCtoLEDs_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="XADCtoLEDs_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="XADCtoLEDs_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="XADCtoLEDs_placed.dcp"/>
+  <File Type="PWROPT-DRC" Name="XADCtoLEDs_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="XADCtoLEDs_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="XADCtoLEDs.hwdef"/>
+  <File Type="OPT-DRC" Name="XADCtoLEDs_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="XADCtoLEDs_opt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="XADCtoLEDs_timing_summary_postroute_physopted.pb"/>
+  <File Type="PA-TCL" Name="XADCtoLEDs.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/XADCtoLEDs.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="XADCtoLEDs"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Labs/Zedboard_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Zedboard_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1551796180"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="xadc_wiz_0"/>
+</GenRun>

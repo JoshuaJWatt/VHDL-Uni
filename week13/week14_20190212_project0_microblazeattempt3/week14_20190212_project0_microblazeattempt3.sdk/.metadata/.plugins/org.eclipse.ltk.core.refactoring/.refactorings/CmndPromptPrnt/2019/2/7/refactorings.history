@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CmndPromptPrnt/src/helloworld.c&apos; to &apos;CmndPromptPrnt.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="CmndPromptPrnt.c" stamp="1549988539077" updateReferences="true"/>
+</session>

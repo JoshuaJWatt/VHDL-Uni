@@ -1,0 +1,16 @@
+15:56:57 **** Incremental Build of configuration Debug for project helloworld3 ****
+make all 
+Building target: helloworld3.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../helloworld3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -o "helloworld3.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/platform.o: In function `enable_caches':
+/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/helloworld3/Debug/../src/platform.c:58: undefined reference to `microblaze_enable_icache'
+/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/helloworld3/Debug/../src/platform.c:61: undefined reference to `microblaze_enable_dcache'
+./src/platform.o: In function `disable_caches':
+/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/helloworld3/Debug/../src/platform.c:69: undefined reference to `Xil_DCacheDisable'
+/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/helloworld3/Debug/../src/platform.c:70: undefined reference to `Xil_ICacheDisable'
+/opt/Xilinx/SDK/2015.1/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/../../../../microblaze-xilinx-elf/lib/le/libxil.a(print.o): In function `print':
+(.text+0x20): undefined reference to `outbyte'
+makefile:36: recipe for target 'helloworld3.elf' failed
+collect2: error: ld returned 1 exit status
+make: *** [helloworld3.elf] Error 1

@@ -1,0 +1,11 @@
+15:37:14 **** Incremental Build of configuration Debug for project Interpreter 1 ****
+make all 
+Building file: ../src/Interpreter1.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Interpreter1.o" -I../../Interpreter 1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -MMD -MP -MF"src/Interpreter1.d" -MT"src/Interpreter1.d" -o "src/Interpreter1.o" "../src/Interpreter1.c"
+mb-gcc: error: 1_bsp/microblaze_0/include: No such file or directory
+make: *** [src/Interpreter1.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Interpreter1.o' failed
+
+15:37:14 Build Finished (took 323ms)
+

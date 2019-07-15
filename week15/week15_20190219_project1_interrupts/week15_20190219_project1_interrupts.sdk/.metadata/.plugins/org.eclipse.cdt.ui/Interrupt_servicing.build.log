@@ -1,0 +1,6 @@
+15:33:55 **** Incremental Build of configuration Debug for project Interrupt_servicing ****
+make all 
+make: Nothing to be done for 'all'.
+
+15:33:55 Build Finished (took 332ms)
+

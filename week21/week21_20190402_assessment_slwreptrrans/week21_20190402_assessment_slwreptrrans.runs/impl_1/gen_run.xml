@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1554215431">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="slwreptrans.vdi"/>
+  <File Type="BG-DRC" Name="slwreptrans.drc"/>
+  <File Type="BG-BGN" Name="slwreptrans.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="slwreptrans.sysdef"/>
+  <File Type="BITSTR-MMI" Name="slwreptrans.mmi"/>
+  <File Type="BITSTR-BMM" Name="slwreptrans_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="slwreptrans.nky"/>
+  <File Type="BITSTR-RBT" Name="slwreptrans.rbt"/>
+  <File Type="BITSTR-MSK" Name="slwreptrans.msk"/>
+  <File Type="BG-BIN" Name="slwreptrans.bin"/>
+  <File Type="BG-BIT" Name="slwreptrans.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="slwreptrans_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="slwreptrans_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="slwreptrans_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="slwreptrans_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="slwreptrans_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="slwreptrans_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="slwreptrans_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="slwreptrans_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="slwreptrans_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="slwreptrans_route_status.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="slwreptrans_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="slwreptrans_power_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="slwreptrans_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="slwreptrans_drc_routed.rpt"/>
+  <File Type="ROUTE-DCP" Name="slwreptrans_routed.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="slwreptrans_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="slwreptrans_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="slwreptrans_postplace_pwropt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="slwreptrans_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="slwreptrans_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="slwreptrans_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="slwreptrans_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="slwreptrans_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="slwreptrans_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="slwreptrans_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="slwreptrans_placed.dcp"/>
+  <File Type="PWROPT-DRC" Name="slwreptrans_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="slwreptrans_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="slwreptrans.hwdef"/>
+  <File Type="OPT-DRC" Name="slwreptrans_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="slwreptrans_opt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="slwreptrans_timing_summary_postroute_physopted.pb"/>
+  <File Type="PA-TCL" Name="slwreptrans.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/slwreptrans.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="slwreptrans"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Labs/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1537878124"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,19 @@
+16:44:37 INFO  : Processing command line option -hwspec /home/physics/Labs/week22/xadctodacPassthroughWORKING/xadctodacPassthroughWORKING.sdk/xadctodacC.hdf.
+16:44:39 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+16:44:40 INFO  : XSDB server has started successfully.
+16:44:40 ERROR : Error occurred while creating hardware platform xadctodacC_hw_platform_0 from sysdef
+java.lang.IllegalArgumentException: Invalid Hardware Specification File provided: /home/physics/Labs/week22/xadctodacPassthroughWORKING/xadctodacPassthroughWORKING.sdk/xadctodacC_hw_platform_0/system.hdf
+	at com.xilinx.sdk.hw.internal.HwPlatform.<init>(HwPlatform.java:91)
+	at com.xilinx.sdk.hw.internal.HwSpecFactory.createHwSpec(HwSpecFactory.java:53)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:117)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:214)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:165)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:152)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:127)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:415)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:397)
+	at com.xilinx.sdk.startup.InitSDK$9.run(InitSDK.java:348)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+16:45:59 INFO  : Processing command line option -hwspec /home/physics/Labs/week22/xadctodacPassthroughWORKING/xadctodacPassthroughWORKING.sdk/design_1_wrapper.hdf.
+16:46:00 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+16:46:01 INFO  : XSDB server has started successfully.

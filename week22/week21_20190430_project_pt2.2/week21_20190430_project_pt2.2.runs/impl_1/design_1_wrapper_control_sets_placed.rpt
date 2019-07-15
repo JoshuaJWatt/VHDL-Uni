@@ -1,0 +1,58 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
+| Date         : Tue May  7 16:14:07 2019
+| Host         : physics-ThinkPad-13-2nd-Gen running 64-bit Ubuntu 16.04.5 LTS
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     5 |
+| Minimum Number of register sites lost to control set restrictions |    19 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            2 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              23 |            5 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               9 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+-------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|            Clock Signal           |                  Enable Signal                  |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-----------------------------------+-------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|  design_1_i/clk_wiz_0/U0/clk_out1 | design_1_i/DAC_0/U0/DAC_reg[15]_i_2_n_0         | design_1_i/DAC_0/U0/DAC_reg[15]_i_1_n_0         |                1 |              4 |
+|  design_1_i/clk_wiz_0/U0/clk_out1 |                                                 |                                                 |                2 |              5 |
+|  design_1_i/clk_wiz_0/U0/clk_out1 | design_1_i/DAC_0/U0/fivebitcount_reg[4]_i_2_n_0 | design_1_i/DAC_0/U0/fivebitcount_reg[4]_i_1_n_0 |                1 |              5 |
+|  design_1_i/clk_wiz_0/U0/clk_out1 | design_1_i/DAC_0/U0/DAC_reg[15]_i_2_n_0         |                                                 |                3 |             11 |
+|  design_1_i/clk_wiz_0/U0/clk_out1 | design_1_i/xadc_block_0/U0/myadc/drdy_out       |                                                 |                2 |             12 |
++-----------------------------------+-------------------------------------------------+-------------------------------------------------+------------------+----------------+
+
+

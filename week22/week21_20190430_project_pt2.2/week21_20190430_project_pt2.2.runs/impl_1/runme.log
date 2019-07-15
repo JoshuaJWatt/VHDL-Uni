@@ -1,0 +1,1244 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/U0'
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/U0'
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1558.426 ; gain = 425.445 ; free physical = 302 ; free virtual = 11513
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/U0'
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_xadc_block_0_1/src/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'design_1_i/xadc_block_0/U0/myadc/U0'
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_xadc_block_0_1/src/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'design_1_i/xadc_block_0/U0/myadc/U0'
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/xadc_block_v1_0/7bce38c0/src/Basys3_Master.xdc] for cell 'design_1_i/xadc_block_0/U0'
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/xadc_block_v1_0/7bce38c0/src/Basys3_Master.xdc:7]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/xadc_block_v1_0/7bce38c0/src/Basys3_Master.xdc:8]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/xadc_block_v1_0/7bce38c0/src/Basys3_Master.xdc:212]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/xadc_block_v1_0/7bce38c0/src/Basys3_Master.xdc:213]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/xadc_block_v1_0/7bce38c0/src/Basys3_Master.xdc:224]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/xadc_block_v1_0/7bce38c0/src/Basys3_Master.xdc:225]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/xadc_block_v1_0/7bce38c0/src/Basys3_Master.xdc] for cell 'design_1_i/xadc_block_0/U0'
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc] for cell 'design_1_i/DAC_0/U0'
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:7]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:8]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:12]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:13]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:14]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:15]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:16]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:17]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:18]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:19]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:20]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:21]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:22]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:23]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:24]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:25]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:26]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:27]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:28]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:29]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:30]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:31]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:32]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:33]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:34]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:35]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:36]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:37]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:38]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:39]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:40]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:41]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:42]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:43]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:182]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:183]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:185]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:186]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+WARNING: [Vivado 12-584] No ports matched 'DATA2'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:188]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:188]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DATA2'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:189]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:189]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:191]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc:192]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/ipshared/user.org/dac_v1_0/0122dc29/src/Basys3_Master.xdc] for cell 'design_1_i/DAC_0/U0'
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:9]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for create_clock constraint with option '-objects [get_ports clk]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:9]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/constrs_1/imports/physics/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1558.426 ; gain = 671.371 ; free physical = 301 ; free virtual = 11512
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -280 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1561.438 ; gain = 3.012 ; free physical = 297 ; free virtual = 11508
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 190916be8
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1567.438 ; gain = 0.000 ; free physical = 297 ; free virtual = 11508
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 190916be8
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1567.438 ; gain = 0.000 ; free physical = 297 ; free virtual = 11508
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 7 unconnected nets.
+INFO: [Opt 31-11] Eliminated 12 unconnected cells.
+Phase 3 Sweep | Checksum: ca97fa2d
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1567.438 ; gain = 0.000 ; free physical = 297 ; free virtual = 11508
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1567.438 ; gain = 0.000 ; free physical = 297 ; free virtual = 11508
+Ending Logic Optimization Task | Checksum: ca97fa2d
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1567.438 ; gain = 0.000 ; free physical = 297 ; free virtual = 11508
+Implement Debug Cores | Checksum: 1ee77b03d
+Logic Optimization | Checksum: 1ee77b03d
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.12 ns.
+Ending Power Optimization Task | Checksum: ca97fa2d
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1567.438 ; gain = 0.000 ; free physical = 297 ; free virtual = 11508
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 39 Warnings, 83 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1599.453 ; gain = 0.000 ; free physical = 296 ; free virtual = 11508
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -280 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: a6c4fe1c
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.26 . Memory (MB): peak = 1599.453 ; gain = 0.000 ; free physical = 287 ; free virtual = 11498
+
+Phase 2 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1599.453 ; gain = 0.000 ; free physical = 287 ; free virtual = 11498
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1599.453 ; gain = 0.000 ; free physical = 287 ; free virtual = 11498
+
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1 Pre-Place Cells
+Phase 2.1.1 Pre-Place Cells | Checksum: 19ac3df4
+
+Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.29 . Memory (MB): peak = 1599.453 ; gain = 0.000 ; free physical = 287 ; free virtual = 11498
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.2 IO & Clk Clean Up
+Phase 2.1.2 IO & Clk Clean Up | Checksum: 19ac3df4
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.76 . Memory (MB): peak = 1619.453 ; gain = 20.000 ; free physical = 280 ; free virtual = 11497
+
+Phase 2.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.3 Implementation Feasibility check On IDelay | Checksum: 19ac3df4
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.76 . Memory (MB): peak = 1619.453 ; gain = 20.000 ; free physical = 280 ; free virtual = 11497
+
+Phase 2.1.4 Commit IO Placement
+Phase 2.1.4 Commit IO Placement | Checksum: d7f4398c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.77 . Memory (MB): peak = 1619.453 ; gain = 20.000 ; free physical = 280 ; free virtual = 11497
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1b610f772
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.77 . Memory (MB): peak = 1619.453 ; gain = 20.000 ; free physical = 280 ; free virtual = 11497
+
+Phase 2.2 Build Placer Netlist Model
+
+Phase 2.2.1 Place Init Design
+
+Phase 2.2.1.1 Init Lut Pin Assignment
+Phase 2.2.1.1 Init Lut Pin Assignment | Checksum: 2ab12d522
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.77 . Memory (MB): peak = 1619.453 ; gain = 20.000 ; free physical = 280 ; free virtual = 11497
+Phase 2.2.1 Place Init Design | Checksum: 263424b51
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.83 . Memory (MB): peak = 1619.453 ; gain = 20.000 ; free physical = 279 ; free virtual = 11497
+Phase 2.2 Build Placer Netlist Model | Checksum: 263424b51
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.83 . Memory (MB): peak = 1619.453 ; gain = 20.000 ; free physical = 279 ; free virtual = 11497
+
+Phase 2.3 Constrain Clocks/Macros
+
+Phase 2.3.1 Constrain Global/Regional Clocks
+Phase 2.3.1 Constrain Global/Regional Clocks | Checksum: 263424b51
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.84 . Memory (MB): peak = 1619.453 ; gain = 20.000 ; free physical = 279 ; free virtual = 11497
+Phase 2.3 Constrain Clocks/Macros | Checksum: 263424b51
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.84 . Memory (MB): peak = 1619.453 ; gain = 20.000 ; free physical = 279 ; free virtual = 11497
+Phase 2 Placer Initialization | Checksum: 263424b51
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.84 . Memory (MB): peak = 1619.453 ; gain = 20.000 ; free physical = 279 ; free virtual = 11497
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 2560f5aec
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 274 ; free virtual = 11492
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 2560f5aec
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 274 ; free virtual = 11492
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 263e43175
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 274 ; free virtual = 11492
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 1cb74c353
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 274 ; free virtual = 11492
+
+Phase 4.4 updateClock Trees: DP
+Phase 4.4 updateClock Trees: DP | Checksum: 1cb74c353
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 274 ; free virtual = 11492
+
+Phase 4.5 Timing Path Optimizer
+Phase 4.5 Timing Path Optimizer | Checksum: 27bfbe9c4
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 274 ; free virtual = 11492
+
+Phase 4.6 Small Shape Detail Placement
+
+Phase 4.6.1 Commit Small Macros & Core Logic
+
+Phase 4.6.1.1 setBudgets
+Phase 4.6.1.1 setBudgets | Checksum: 2239ad785
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 274 ; free virtual = 11492
+
+Phase 4.6.1.2 Commit Slice Clusters
+Phase 4.6.1.2 Commit Slice Clusters | Checksum: 1eb739ce5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+Phase 4.6.1 Commit Small Macros & Core Logic | Checksum: 1eb739ce5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1eb739ce5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1eb739ce5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+Phase 4.6 Small Shape Detail Placement | Checksum: 1eb739ce5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+
+Phase 4.7 Re-assign LUT pins
+Phase 4.7 Re-assign LUT pins | Checksum: 1eb739ce5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+Phase 4 Detail Placement | Checksum: 1eb739ce5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 184db0ecb
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+
+Phase 6 Post Commit Optimization
+
+Phase 6.1 updateClock Trees: PCOPT
+Phase 6.1 updateClock Trees: PCOPT | Checksum: 184db0ecb
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+
+Phase 6.2 Post Placement Optimization
+
+Phase 6.2.1 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=6.281. For the most accurate timing information please run report_timing.
+Phase 6.2.1 Post Placement Timing Optimization | Checksum: 1759b469d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+Phase 6.2 Post Placement Optimization | Checksum: 1759b469d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+Phase 6 Post Commit Optimization | Checksum: 1759b469d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+
+Phase 5.2 Sweep Clock Roots: Post-Placement
+Phase 5.2 Sweep Clock Roots: Post-Placement | Checksum: 1759b469d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+
+Phase 5.3 Post Placement Cleanup
+Phase 5.3 Post Placement Cleanup | Checksum: 1759b469d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+
+Phase 5.4 Placer Reporting
+
+Phase 5.4.1 Restore STA
+Phase 5.4.1 Restore STA | Checksum: 1759b469d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+Phase 5.4 Placer Reporting | Checksum: 1759b469d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+
+Phase 5.5 Final Placement Cleanup
+Phase 5.5 Final Placement Cleanup | Checksum: 15ab68c5a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 15ab68c5a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+Ending Placer Task | Checksum: a4b8112b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1643.465 ; gain = 44.012 ; free physical = 271 ; free virtual = 11489
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 39 Warnings, 83 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1643.465 ; gain = 0.000 ; free physical = 270 ; free virtual = 11489
+report_io: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1643.465 ; gain = 0.000 ; free physical = 269 ; free virtual = 11487
+report_utilization: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.67 . Memory (MB): peak = 1643.465 ; gain = 0.000 ; free physical = 269 ; free virtual = 11487
+report_control_sets: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1643.465 ; gain = 0.000 ; free physical = 269 ; free virtual = 11486
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -280 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1adf80ca6
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1673.121 ; gain = 29.656 ; free physical = 177 ; free virtual = 11391
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1adf80ca6
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1679.121 ; gain = 35.656 ; free physical = 177 ; free virtual = 11391
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1adf80ca6
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1694.121 ; gain = 50.656 ; free physical = 164 ; free virtual = 11377
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1d05514e3
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 152 ; free virtual = 11365
+INFO: [Route 35-57] Estimated Timing Summary | WNS=6.282  | TNS=0.000  | WHS=-0.115 | THS=-1.156 |
+
+Phase 2 Router Initialization | Checksum: 132fee93b
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 152 ; free virtual = 11365
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1927071cb
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11365
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: ab3da656
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11365
+INFO: [Route 35-57] Estimated Timing Summary | WNS=5.900  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 11d6adee5
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11365
+Phase 4 Rip-up And Reroute | Checksum: 11d6adee5
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11365
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 180b5af99
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11365
+INFO: [Route 35-57] Estimated Timing Summary | WNS=5.994  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 180b5af99
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11365
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 180b5af99
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11365
+Phase 5 Delay and Skew Optimization | Checksum: 180b5af99
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11365
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Update Timing
+Phase 6.1 Update Timing | Checksum: f1334858
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11365
+INFO: [Route 35-57] Estimated Timing Summary | WNS=5.994  | TNS=0.000  | WHS=0.179  | THS=0.000  |
+
+Phase 6 Post Hold Fix | Checksum: f1334858
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11365
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0143506 %
+  Global Horizontal Routing Utilization  = 0.0141853 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: ae6a17e5
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11365
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: ae6a17e5
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11364
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: fc476deb
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11364
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=5.994  | TNS=0.000  | WHS=0.179  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: fc476deb
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11364
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1706.121 ; gain = 62.656 ; free physical = 151 ; free virtual = 11364
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+51 Infos, 39 Warnings, 83 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1732.023 ; gain = 88.559 ; free physical = 151 ; free virtual = 11364
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1747.930 ; gain = 0.000 ; free physical = 150 ; free virtual = 11364
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -280 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue May  7 16:14:37 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2054.070 ; gain = 274.109 ; free physical = 156 ; free virtual = 11058
+INFO: [Common 17-206] Exiting Vivado at Tue May  7 16:14:38 2019...
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint design_1_wrapper_routed.dcp
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-16295-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1547.883 ; gain = 421.445 ; free physical = 618 ; free virtual = 11519
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-16295-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-16295-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-16295-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1547.883 ; gain = 0.000 ; free physical = 617 ; free virtual = 11519
+Restored from archive | CPU: 0.030000 secs | Memory: 0.082092 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1547.883 ; gain = 0.000 ; free physical = 617 ; free virtual = 11519
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 1215546
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1547.883 ; gain = 662.844 ; free physical = 618 ; free virtual = 11519
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -280 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue May  7 16:15:19 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1933.645 ; gain = 385.762 ; free physical = 263 ; free virtual = 11165
+INFO: [Common 17-206] Exiting Vivado at Tue May  7 16:15:19 2019...
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint design_1_wrapper_routed.dcp
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-31830-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1547.891 ; gain = 421.445 ; free physical = 263 ; free virtual = 11197
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-31830-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-31830-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-31830-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1547.891 ; gain = 0.000 ; free physical = 263 ; free virtual = 11197
+Restored from archive | CPU: 0.010000 secs | Memory: 0.082092 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1547.891 ; gain = 0.000 ; free physical = 263 ; free virtual = 11197
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 1215546
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1547.891 ; gain = 662.844 ; free physical = 263 ; free virtual = 11197
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -287 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue May 14 15:17:06 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1934.652 ; gain = 386.762 ; free physical = 147 ; free virtual = 10856
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 15:17:06 2019...
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint design_1_wrapper_routed.dcp
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-429-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1547.883 ; gain = 421.445 ; free physical = 367 ; free virtual = 11137
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-429-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-429-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-429-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1547.883 ; gain = 0.000 ; free physical = 367 ; free virtual = 11137
+Restored from archive | CPU: 0.010000 secs | Memory: 0.082092 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1547.883 ; gain = 0.000 ; free physical = 367 ; free virtual = 11137
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 1215546
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1547.883 ; gain = 662.844 ; free physical = 368 ; free virtual = 11136
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -287 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue May 14 15:35:20 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1933.645 ; gain = 385.762 ; free physical = 139 ; free virtual = 10788
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 15:35:20 2019...
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint design_1_wrapper_routed.dcp
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-610-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1547.887 ; gain = 421.445 ; free physical = 480 ; free virtual = 11130
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-610-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-610-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-610-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1547.887 ; gain = 0.000 ; free physical = 480 ; free virtual = 11130
+Restored from archive | CPU: 0.010000 secs | Memory: 0.082092 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1547.887 ; gain = 0.000 ; free physical = 480 ; free virtual = 11130
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 1215546
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1547.887 ; gain = 662.844 ; free physical = 481 ; free virtual = 11130
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -287 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue May 14 15:38:15 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1933.648 ; gain = 385.762 ; free physical = 146 ; free virtual = 10779
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 15:38:15 2019...
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint design_1_wrapper_routed.dcp
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-1273-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1547.883 ; gain = 421.445 ; free physical = 502 ; free virtual = 11137
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-1273-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-1273-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-1273-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1547.883 ; gain = 0.000 ; free physical = 502 ; free virtual = 11137
+Restored from archive | CPU: 0.010000 secs | Memory: 0.082092 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1547.883 ; gain = 0.000 ; free physical = 502 ; free virtual = 11137
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 1215546
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1547.883 ; gain = 662.844 ; free physical = 503 ; free virtual = 11137
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -287 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue May 14 15:55:48 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1934.645 ; gain = 386.762 ; free physical = 149 ; free virtual = 10785
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 15:55:48 2019...
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint design_1_wrapper_routed.dcp
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-3211-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1548.258 ; gain = 422.445 ; free physical = 426 ; free virtual = 11086
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-3211-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-3211-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-3211-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1548.258 ; gain = 0.000 ; free physical = 426 ; free virtual = 11086
+Restored from archive | CPU: 0.010000 secs | Memory: 0.082092 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1548.258 ; gain = 0.000 ; free physical = 426 ; free virtual = 11086
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 1215546
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1548.258 ; gain = 663.211 ; free physical = 427 ; free virtual = 11085
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -287 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue May 14 16:29:21 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1934.020 ; gain = 385.762 ; free physical = 147 ; free virtual = 10738
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 16:29:21 2019...
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint design_1_wrapper_routed.dcp
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-3433-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1547.891 ; gain = 421.445 ; free physical = 527 ; free virtual = 11119
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-3433-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-3433-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-3433-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1547.891 ; gain = 0.000 ; free physical = 527 ; free virtual = 11119
+Restored from archive | CPU: 0.010000 secs | Memory: 0.082092 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1547.891 ; gain = 0.000 ; free physical = 527 ; free virtual = 11119
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 1215546
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1547.891 ; gain = 662.844 ; free physical = 528 ; free virtual = 11119
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -287 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue May 14 16:31:54 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1933.652 ; gain = 385.762 ; free physical = 177 ; free virtual = 10769
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 16:31:54 2019...
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint design_1_wrapper_routed.dcp
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-6405-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1547.891 ; gain = 421.445 ; free physical = 471 ; free virtual = 11097
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-6405-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-6405-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Finished Parsing XDC File [/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/.Xil/Vivado-6405-physics-ThinkPad-13-2nd-Gen/dcp/design_1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1547.891 ; gain = 0.000 ; free physical = 471 ; free virtual = 11097
+Restored from archive | CPU: 0.010000 secs | Memory: 0.082092 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1547.891 ; gain = 0.000 ; free physical = 471 ; free virtual = 11097
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 1215546
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1547.891 ; gain = 662.844 ; free physical = 472 ; free virtual = 11096
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -287 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/physics/Labs/week22/week21_20190430_project_pt2.2/week21_20190430_project_pt2.2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue May 14 16:53:04 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1933.652 ; gain = 385.762 ; free physical = 150 ; free virtual = 10745
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 16:53:04 2019...

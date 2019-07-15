@@ -1,0 +1,212 @@
+16:08:40 INFO  : Processing command line option -hwspec /home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/design_1_wrapper.hdf.
+16:08:43 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+16:08:44 INFO  : XSDB server has started successfully.
+16:16:44 INFO  : Processing command line option -hwspec /home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/design_1_wrapper.hdf.
+16:16:45 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+16:16:46 INFO  : XSDB server has started successfully.
+16:16:46 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:16:46 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1549988180000,  Project:1549987676000
+16:16:46 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from /home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/design_1_wrapper.hdf.
+16:16:46 INFO  : Copied contents of /home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+16:16:46 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:16:46 INFO  : Clearing existing target manager status.
+16:16:49 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+16:17:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:17:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:17:22 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/design_1_wrapper_hw_platform_0/download.bit"
+16:17:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:17:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:17:36 INFO  : 'fpga -state' command is executed.
+16:17:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:17:36 INFO  : Context for processor 'microblaze_0' is selected.
+16:17:37 INFO  : Processor reset is completed for 'microblaze_0'.
+16:17:37 INFO  : Context for processor 'microblaze_0' is selected.
+16:17:37 INFO  : The application '/home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/helloworld/Debug/helloworld.elf' is downloaded to processor 'microblaze_0'.
+16:17:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+dow /home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/helloworld/Debug/helloworld.elf
+----------------End of Script----------------
+
+16:17:37 INFO  : Context for processor 'microblaze_0' is selected.
+16:17:37 INFO  : 'con' command is executed.
+16:17:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+con
+----------------End of Script----------------
+
+16:24:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:24:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:24:14 INFO  : 'fpga -state' command is executed.
+16:24:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:24:14 INFO  : Context for processor 'microblaze_0' is selected.
+16:24:14 INFO  : Processor reset is completed for 'microblaze_0'.
+16:24:14 INFO  : Context for processor 'microblaze_0' is selected.
+16:24:14 INFO  : The application '/home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/CmndPromptPrnt/Debug/CmndPromptPrnt.elf' is downloaded to processor 'microblaze_0'.
+16:24:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+dow /home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/CmndPromptPrnt/Debug/CmndPromptPrnt.elf
+----------------End of Script----------------
+
+16:24:15 INFO  : Context for processor 'microblaze_0' is selected.
+16:24:15 INFO  : 'con' command is executed.
+16:24:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+con
+----------------End of Script----------------
+
+16:24:29 INFO  : Disconnected from the channel tcfchan#1.
+16:24:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:24:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:24:30 INFO  : 'fpga -state' command is executed.
+16:24:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:24:30 INFO  : Context for processor 'microblaze_0' is selected.
+16:24:30 INFO  : Processor reset is completed for 'microblaze_0'.
+16:24:30 INFO  : Context for processor 'microblaze_0' is selected.
+16:24:30 INFO  : The application '/home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/CmndPromptPrnt/Debug/CmndPromptPrnt.elf' is downloaded to processor 'microblaze_0'.
+16:24:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+dow /home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/CmndPromptPrnt/Debug/CmndPromptPrnt.elf
+----------------End of Script----------------
+
+16:24:31 INFO  : Context for processor 'microblaze_0' is selected.
+16:24:31 INFO  : 'con' command is executed.
+16:24:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+con
+----------------End of Script----------------
+
+16:24:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:24:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:24:54 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/design_1_wrapper_hw_platform_0/download.bit"
+16:25:17 INFO  : Disconnected from the channel tcfchan#2.
+16:25:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:25:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:25:18 INFO  : 'fpga -state' command is executed.
+16:25:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:25:18 INFO  : Context for processor 'microblaze_0' is selected.
+16:25:18 INFO  : Processor reset is completed for 'microblaze_0'.
+16:25:19 INFO  : Context for processor 'microblaze_0' is selected.
+16:25:19 INFO  : The application '/home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/CmndPromptPrnt/Debug/CmndPromptPrnt.elf' is downloaded to processor 'microblaze_0'.
+16:25:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+dow /home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/CmndPromptPrnt/Debug/CmndPromptPrnt.elf
+----------------End of Script----------------
+
+16:25:19 INFO  : Context for processor 'microblaze_0' is selected.
+16:25:19 INFO  : 'con' command is executed.
+16:25:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+con
+----------------End of Script----------------
+
+16:26:07 INFO  : Disconnected from the channel tcfchan#3.
+16:26:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:26:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:26:08 INFO  : 'fpga -state' command is executed.
+16:26:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:26:08 INFO  : Context for processor 'microblaze_0' is selected.
+16:26:08 INFO  : Processor reset is completed for 'microblaze_0'.
+16:26:09 INFO  : Context for processor 'microblaze_0' is selected.
+16:26:09 INFO  : The application '/home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/CmndPromptPrnt/Debug/CmndPromptPrnt.elf' is downloaded to processor 'microblaze_0'.
+16:26:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+dow /home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/CmndPromptPrnt/Debug/CmndPromptPrnt.elf
+----------------End of Script----------------
+
+16:26:09 INFO  : Context for processor 'microblaze_0' is selected.
+16:26:09 INFO  : 'con' command is executed.
+16:26:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+con
+----------------End of Script----------------
+
+16:26:39 INFO  : Disconnected from the channel tcfchan#4.
+16:26:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:26:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:26:40 INFO  : 'fpga -state' command is executed.
+16:26:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:26:40 INFO  : Context for processor 'microblaze_0' is selected.
+16:26:40 INFO  : Processor reset is completed for 'microblaze_0'.
+16:26:40 INFO  : Context for processor 'microblaze_0' is selected.
+16:26:40 INFO  : The application '/home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/CmndPromptPrnt/Debug/CmndPromptPrnt.elf' is downloaded to processor 'microblaze_0'.
+16:26:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+dow /home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/CmndPromptPrnt/Debug/CmndPromptPrnt.elf
+----------------End of Script----------------
+
+16:26:40 INFO  : Context for processor 'microblaze_0' is selected.
+16:26:41 INFO  : 'con' command is executed.
+16:26:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+con
+----------------End of Script----------------
+
+16:27:43 INFO  : Disconnected from the channel tcfchan#5.
+16:27:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:27:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:27:43 INFO  : 'fpga -state' command is executed.
+16:27:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:27:44 INFO  : Context for processor 'microblaze_0' is selected.
+16:27:44 INFO  : Processor reset is completed for 'microblaze_0'.
+16:27:44 INFO  : Context for processor 'microblaze_0' is selected.
+16:27:44 INFO  : The application '/home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/CmndPromptPrnt/Debug/CmndPromptPrnt.elf' is downloaded to processor 'microblaze_0'.
+16:27:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+dow /home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/CmndPromptPrnt/Debug/CmndPromptPrnt.elf
+----------------End of Script----------------
+
+16:27:44 INFO  : Context for processor 'microblaze_0' is selected.
+16:27:45 INFO  : 'con' command is executed.
+16:27:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+con
+----------------End of Script----------------
+
+16:29:17 INFO  : Disconnected from the channel tcfchan#6.
+16:29:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:29:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:29:17 INFO  : 'fpga -state' command is executed.
+16:29:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:29:17 INFO  : Context for processor 'microblaze_0' is selected.
+16:29:18 INFO  : Processor reset is completed for 'microblaze_0'.
+16:29:18 INFO  : Context for processor 'microblaze_0' is selected.
+16:29:18 INFO  : The application '/home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/CmndPromptPrnt/Debug/CmndPromptPrnt.elf' is downloaded to processor 'microblaze_0'.
+16:29:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+dow /home/physics/Labs/week13/week14_20190212_project0_microblazeattempt3/week14_20190212_project0_microblazeattempt3.sdk/CmndPromptPrnt/Debug/CmndPromptPrnt.elf
+----------------End of Script----------------
+
+16:29:18 INFO  : Context for processor 'microblaze_0' is selected.
+16:29:18 INFO  : 'con' command is executed.
+16:29:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+con
+----------------End of Script----------------
+
+16:29:56 ERROR : channel "tcfchan#1" closed
+16:29:56 INFO  : Disconnected from the channel tcfchan#7.
+16:29:57 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

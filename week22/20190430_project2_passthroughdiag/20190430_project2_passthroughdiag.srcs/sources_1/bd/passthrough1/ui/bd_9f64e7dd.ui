@@ -1,0 +1,23 @@
+{
+   guistr: "# # String gsaved with Nlview 6.4.12  2014-12-16 bk=1.3272 VDI=35 GEI=35 GUI=JA:1.8
+#  -string -flagsOSRD
+preplace port SCLK -pg 1 -y 410 -defaultsOSRD
+preplace port sys_clock -pg 1 -y 50 -defaultsOSRD
+preplace port vauxp14 -pg 1 -y 410 -defaultsOSRD
+preplace port DATA -pg 1 -y 390 -defaultsOSRD
+preplace port vauxn14 -pg 1 -y 430 -defaultsOSRD
+preplace port SYNC -pg 1 -y 370 -defaultsOSRD
+preplace inst DAC_0 -pg 1 -lvl 3 -y 390 -defaultsOSRD
+preplace inst xadc_block_0 -pg 1 -lvl 1 -y 410 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 60 -defaultsOSRD
+preplace netloc vauxp14_1 1 0 1 N
+preplace netloc DAC_0_DATA 1 3 1 N
+preplace netloc sys_clock_1 1 0 1 N
+preplace netloc vauxn14_1 1 0 1 N
+preplace netloc clk_wiz_0_clk_out1 1 0 3 120 120 340 120 440
+preplace netloc xadc_block_0_out_data 1 1 2 NJ 400 N
+preplace netloc DAC_0_SCLK 1 3 1 N
+preplace netloc DAC_0_SYNC 1 3 1 N
+levelinfo -pg 1 100 230 420 610 720
+",
+}

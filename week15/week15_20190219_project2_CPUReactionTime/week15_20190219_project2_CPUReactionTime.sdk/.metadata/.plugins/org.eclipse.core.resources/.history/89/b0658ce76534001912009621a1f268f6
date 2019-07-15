@@ -1,0 +1,52 @@
+/**********************************************/
+#include <stdio.h>
+#include "platform.h"
+#include "xintc.h"
+#include "xintc_l.h"
+#include "xparameters.h"
+#define DELAYLIMIT 3000000
+void interrupt_service_routine(void);
+int main(void) {
+int delay, count;
+
+XIntc myintc;
+    init_platform();
+    xil_printf("registering interrupt.\r\n");
+    /* associate interrupt myintc with interrupt  */
+    /* XPAR_INTC_0_DEVICE_ID is defined in xparameters.h */
+    XIntc_Initialize(&myintc, XPAR_INTC_0_DEVICE_ID);
+    xil_printf("connecting button C  to interrupt");
+    XIntc_Connect(&myintc,
+     XPAR_MICROBLAZE_0_AXI_INTC_SYSTEM_BTNL_0_INTR,
+     (XInterruptHandler)&interrupt_service_routine,
+     (void*)0x0);
+    xil_printf("enabling individual interrupt.\r\n");
+    XIntc_EnableIntr(&myintc, XPAR_SYSTEM_BTNL_0_MASK);
+    xil_printf("starting interrupt.\r\n");
+    /* the alternative mode is XIN_SIMULATION_MODE ­ defined in xintc.h */
+    XIntc_Start(&myintc, XIN_REAL_MODE);
+    /* enable a single interrupt corresponding only to button C */
+    XIntc_Enable(&myintc,
+     XPAR_MICROBLAZE_0_AXI_INTC_SYSTEM_BTNL_0_INTR);
+    /* set the MSR bit that globally enables all interrupts */
+    microblaze_enable_interrupts();
+    /* loop to execute from main program to show it is still going */
+    count=0;
+    while(1) {
+     xil_printf("main() loop running; count is %d.\r\n",count++);
+     for(delay=0;delay<(int)DELAYLIMIT;++delay) {};
+    }
+    cleanup_platform();
+    return 0;
+}
+void interrupt_service_routine(void) {
+	int intcount;
+	intcount = 0;
+microblaze_disable_interrupts();
+print("Interrupt!\n\r");
+intcount = intcount + 1;
+print("Interrupt Count = " intcount);
+print( "\n\r");
+microblaze_enable_interrupts();
+}
+/* End of source listing */

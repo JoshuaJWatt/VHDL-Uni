@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Tue Apr  2 15:15:30 2019
+# Process ID: 31301
+# Log file: /home/physics/Labs/week21/week21_20190402_assessment_slwreptrrans/week21_20190402_assessment_slwreptrrans.runs/impl_1/slwreptrans.vdi
+# Journal file: /home/physics/Labs/week21/week21_20190402_assessment_slwreptrrans/week21_20190402_assessment_slwreptrrans.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source slwreptrans.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/physics/Labs/week21/week21_20190402_assessment_slwreptrrans/week21_20190402_assessment_slwreptrrans.srcs/constrs_1/imports/Labs/Basys3_Master.xdc]
+Finished Parsing XDC File [/home/physics/Labs/week21/week21_20190402_assessment_slwreptrrans/week21_20190402_assessment_slwreptrrans.srcs/constrs_1/imports/Labs/Basys3_Master.xdc]
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -245 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1130.621 ; gain = 9.012 ; free physical = 1925 ; free virtual = 13099
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 177a76851
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1586.066 ; gain = 0.000 ; free physical = 1583 ; free virtual = 12759
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 61 cells.
+Phase 2 Constant Propagation | Checksum: 104e1a49f
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1586.066 ; gain = 0.000 ; free physical = 1583 ; free virtual = 12759
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 28 unconnected nets.
+INFO: [Opt 31-140] Inserted 17 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 51 unconnected cells.
+Phase 3 Sweep | Checksum: 1debc01d6
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1586.066 ; gain = 0.000 ; free physical = 1583 ; free virtual = 12759
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1586.066 ; gain = 0.000 ; free physical = 1583 ; free virtual = 12759
+Ending Logic Optimization Task | Checksum: 1debc01d6
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1586.066 ; gain = 0.000 ; free physical = 1583 ; free virtual = 12759
+Implement Debug Cores | Checksum: d35f0402
+Logic Optimization | Checksum: d35f0402
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.12 ns.
+Ending Power Optimization Task | Checksum: 1debc01d6
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1586.066 ; gain = 0.000 ; free physical = 1581 ; free virtual = 12759
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1586.066 ; gain = 464.457 ; free physical = 1581 ; free virtual = 12759
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1618.082 ; gain = 0.000 ; free physical = 1579 ; free virtual = 12759

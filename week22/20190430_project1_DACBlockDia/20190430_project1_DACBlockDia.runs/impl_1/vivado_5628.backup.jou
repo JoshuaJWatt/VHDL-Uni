@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Tue Apr 30 15:20:49 2019
+# Process ID: 5540
+# Log file: /home/physics/Labs/week22/20190430_project1_DACBlockDia/20190430_project1_DACBlockDia.runs/impl_1/sdIO.vdi
+# Journal file: /home/physics/Labs/week22/20190430_project1_DACBlockDia/20190430_project1_DACBlockDia.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source sdIO.tcl -notrace

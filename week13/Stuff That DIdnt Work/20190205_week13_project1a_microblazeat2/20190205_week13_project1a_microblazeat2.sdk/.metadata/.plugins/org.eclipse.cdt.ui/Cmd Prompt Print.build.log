@@ -1,0 +1,12 @@
+15:39:25 **** Incremental Build of configuration Debug for project Cmd Prompt Print ****
+make all 
+Building file: ../src/CmdPromptPrint.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/CmdPromptPrint.o" -I../../Cmd Prompt Print_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -MMD -MP -MF"src/CmdPromptPrint.d" -MT"src/CmdPromptPrint.d" -o "src/CmdPromptPrint.o" "../src/CmdPromptPrint.c"
+mb-gcc: error: Prompt: No such file or directory
+mb-gcc: error: Print_bsp/microblaze_0/include: No such file or directory
+src/subdir.mk:24: recipe for target 'src/CmdPromptPrint.o' failed
+make: *** [src/CmdPromptPrint.o] Error 1
+
+15:39:25 Build Finished (took 313ms)
+

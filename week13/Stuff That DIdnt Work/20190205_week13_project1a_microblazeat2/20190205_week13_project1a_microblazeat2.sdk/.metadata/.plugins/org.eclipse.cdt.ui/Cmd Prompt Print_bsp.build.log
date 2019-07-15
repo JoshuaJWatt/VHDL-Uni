@@ -1,0 +1,47 @@
+15:52:23 **** Build of project Cmd Prompt Print_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/cpu_v2_3/src
+make -C microblaze_0/libsrc/cpu_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/uartlite_v3_0/src
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/bram_v4_0/src
+make -C microblaze_0/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/standalone_v5_0/src
+make -C microblaze_0/libsrc/standalone_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in microblaze_0/libsrc/cpu_v2_3/src
+make -C microblaze_0/libsrc/cpu_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu
+Makefile:18: recipe for target 'libs' failed
+Makefile:27: recipe for target 'microblaze_0/libsrc/cpu_v2_3/src/make.libs' failed
+mb-gcc: error while loading shared libraries: libstdc++.so.6: wrong ELF class: ELFCLASS64
+Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src
+make[1]: *** [libs] Error 127
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartlite
+Makefile:19: recipe for target 'libs' failed
+make: *** [microblaze_0/libsrc/cpu_v2_3/src/make.libs] Error 2
+Makefile:27: recipe for target 'microblaze_0/libsrc/uartlite_v3_0/src/make.libs' failed
+mb-gcc: error while loading shared libraries: libstdc++.so.6: wrong ELF class: ELFCLASS64
+Running Make libs in microblaze_0/libsrc/bram_v4_0/src
+make[1]: *** [libs] Error 127
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+make: *** [microblaze_0/libsrc/uartlite_v3_0/src/make.libs] Error 2
+Compiling bram
+mb-gcc: error while loading shared libraries: libstdc++.so.6: wrong ELF class: ELFCLASS64
+make[1]: *** [libs] Error 127
+make: *** [microblaze_0/libsrc/bram_v4_0/src/make.libs] Error 2
+Makefile:19: recipe for target 'libs' failed
+Makefile:27: recipe for target 'microblaze_0/libsrc/bram_v4_0/src/make.libs' failed
+Running Make libs in microblaze_0/libsrc/standalone_v5_0/src
+make -C microblaze_0/libsrc/standalone_v5_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+mb-gcc: error while loading shared libraries: libstdc++.so.6: wrong ELF class: ELFCLASS64
+Makefile:60: recipe for target 'standalone_libs' failed
+make[1]: *** [standalone_libs] Error 127
+make[1]: Target 'libs' not remade because of errors.
+make: *** [microblaze_0/libsrc/standalone_v5_0/src/make.libs] Error 2
+make: Target 'all' not remade because of errors.
+Makefile:27: recipe for target 'microblaze_0/libsrc/standalone_v5_0/src/make.libs' failed
+
+15:52:24 Build Finished (took 448ms)
+

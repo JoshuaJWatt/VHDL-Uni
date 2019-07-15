@@ -1,0 +1,288 @@
+
+*** Running vivado
+    with args -log timetobitnostate.vds -m64 -mode batch -messageDb vivado.pb -notrace -source timetobitnostate.tcl
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source timetobitnostate.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+Command: synth_design -top timetobitnostate -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -119 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 922.055 ; gain = 143.457 ; free physical = 4409 ; free virtual = 14142
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'timetobitnostate' [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/sources_1/new/timetobitnostate.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'timetobitnostate' (1#1) [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/sources_1/new/timetobitnostate.vhd:40]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 958.336 ; gain = 179.738 ; free physical = 4371 ; free virtual = 14105
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 958.336 ; gain = 179.738 ; free physical = 4370 ; free virtual = 14105
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/constrs_1/imports/Labs/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1238.469 ; gain = 0.000 ; free physical = 4163 ; free virtual = 13935
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1238.469 ; gain = 459.871 ; free physical = 4162 ; free virtual = 13933
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.469 ; gain = 459.871 ; free physical = 4162 ; free virtual = 13933
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.469 ; gain = 459.871 ; free physical = 4162 ; free virtual = 13933
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'bpress_next_reg' [/home/physics/Labs/week9Assessed/week9_20181127_project1_timetodigital1NoState/week9_20181127_project1_timetodigital1NoState.srcs/sources_1/new/timetobitnostate.vhd:53]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.469 ; gain = 459.871 ; free physical = 4154 ; free virtual = 13925
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module timetobitnostate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.469 ; gain = 459.871 ; free physical = 4154 ; free virtual = 13925
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.469 ; gain = 459.871 ; free physical = 4146 ; free virtual = 13917
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.469 ; gain = 459.871 ; free physical = 4146 ; free virtual = 13917
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.469 ; gain = 459.871 ; free physical = 4137 ; free virtual = 13909
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.469 ; gain = 459.871 ; free physical = 4137 ; free virtual = 13909
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.469 ; gain = 459.871 ; free physical = 4137 ; free virtual = 13909
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1238.469 ; gain = 459.871 ; free physical = 4090 ; free virtual = 13869
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1238.469 ; gain = 459.871 ; free physical = 4090 ; free virtual = 13869
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1246.477 ; gain = 467.879 ; free physical = 4073 ; free virtual = 13852
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1246.477 ; gain = 467.879 ; free physical = 4072 ; free virtual = 13852
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1246.477 ; gain = 467.879 ; free physical = 4072 ; free virtual = 13852
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1246.477 ; gain = 467.879 ; free physical = 4072 ; free virtual = 13852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1246.477 ; gain = 467.879 ; free physical = 4072 ; free virtual = 13852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1246.477 ; gain = 467.879 ; free physical = 4072 ; free virtual = 13852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |    34|
+|4     |LUT2   |     1|
+|5     |FDRE   |    32|
+|6     |FDSE   |     1|
+|7     |LDC    |     1|
+|8     |IBUF   |     2|
+|9     |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    96|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1246.477 ; gain = 467.879 ; free physical = 4072 ; free virtual = 13851
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1246.477 ; gain = 79.289 ; free physical = 4071 ; free virtual = 13850
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1246.477 ; gain = 467.879 ; free physical = 4071 ; free virtual = 13850
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDC => LDCE (inverted pins: G): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 11 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1246.477 ; gain = 359.422 ; free physical = 4069 ; free virtual = 13850
+report_utilization: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.67 . Memory (MB): peak = 1254.480 ; gain = 0.000 ; free physical = 4069 ; free virtual = 13850
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 27 14:49:19 2018...

@@ -1,0 +1,283 @@
+14:32:41 INFO  : Processing command line option -hwspec /home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper.hdf.
+14:32:44 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+14:32:45 INFO  : XSDB server has started successfully.
+14:33:59 ERROR :  [Hsi 55-1545] Problem running tcl command ::sw_standalone_v5_0::post_generate : couldn't execute "mb-ar": no such file or directory
+    while executing
+"exec $archiver -d $libgloss_a _interrupt_handler.o"
+    (procedure "::sw_standalone_v5_0::post_generate" line 18)
+    invoked from within
+"::sw_standalone_v5_0::post_generate standalone"
+ [Hsi 55-1443] Error(s) while running TCL procedure post_generate()
+14:33:59 ERROR : Error generating bsp sources: Failed to generate BSP.
+14:34:12 ERROR :  [Hsi 55-1545] Problem running tcl command ::sw_standalone_v5_0::post_generate : couldn't execute "mb-ar": no such file or directory
+    while executing
+"exec $archiver -d $libgloss_a _interrupt_handler.o"
+    (procedure "::sw_standalone_v5_0::post_generate" line 18)
+    invoked from within
+"::sw_standalone_v5_0::post_generate standalone"
+ [Hsi 55-1443] Error(s) while running TCL procedure post_generate()
+14:34:12 ERROR : Error generating bsp sources: Failed to generate BSP.
+14:35:29 ERROR :  [Hsi 55-1545] Problem running tcl command ::sw_standalone_v5_0::post_generate : couldn't execute "mb-ar": no such file or directory
+    while executing
+"exec $archiver -d $libgloss_a _interrupt_handler.o"
+    (procedure "::sw_standalone_v5_0::post_generate" line 18)
+    invoked from within
+"::sw_standalone_v5_0::post_generate standalone"
+ [Hsi 55-1443] Error(s) while running TCL procedure post_generate()
+14:35:29 ERROR : Error generating bsp sources: Failed to generate BSP.
+14:42:09 ERROR :  [Hsi 55-1545] Problem running tcl command ::sw_standalone_v5_0::post_generate : couldn't execute "mb-ar": no such file or directory
+    while executing
+"exec $archiver -d $libgloss_a _interrupt_handler.o"
+    (procedure "::sw_standalone_v5_0::post_generate" line 18)
+    invoked from within
+"::sw_standalone_v5_0::post_generate standalone"
+ [Hsi 55-1443] Error(s) while running TCL procedure post_generate()
+14:42:09 ERROR : Error generating bsp sources: Failed to generate BSP.
+14:44:45 INFO  : Processing command line option -hwspec /home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper.hdf.
+14:44:45 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+14:44:46 INFO  : XSDB server has started successfully.
+14:44:47 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+14:45:12 ERROR :  [Hsi 55-1545] Problem running tcl command ::sw_standalone_v5_0::post_generate : couldn't execute "mb-ar": no such file or directory
+    while executing
+"exec $archiver -d $libgloss_a _interrupt_handler.o"
+    (procedure "::sw_standalone_v5_0::post_generate" line 18)
+    invoked from within
+"::sw_standalone_v5_0::post_generate standalone"
+ [Hsi 55-1443] Error(s) while running TCL procedure post_generate()
+14:45:13 ERROR : Error generating bsp sources: Failed to generate BSP.
+14:51:50 INFO  : Processing command line option -hwspec /home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper.hdf.
+14:51:50 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+14:51:51 INFO  : XSDB server has started successfully.
+14:51:51 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+14:52:02 ERROR :  [Hsi 55-1545] Problem running tcl command ::sw_standalone_v5_0::post_generate : couldn't execute "mb-ar": no such file or directory
+    while executing
+"exec $archiver -d $libgloss_a _interrupt_handler.o"
+    (procedure "::sw_standalone_v5_0::post_generate" line 18)
+    invoked from within
+"::sw_standalone_v5_0::post_generate standalone"
+ [Hsi 55-1443] Error(s) while running TCL procedure post_generate()
+14:52:02 ERROR : Error generating bsp sources: Failed to generate BSP.
+15:02:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:02:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:02:37 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+15:03:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:03:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:03:46 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+15:05:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:05:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:05:39 INFO  : 'fpga -state' command is executed.
+15:05:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:05:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:06:11 INFO  : Disconnected from the channel tcfchan#1.
+15:06:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:06:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:06:11 INFO  : 'fpga -state' command is executed.
+15:06:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:06:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:07:57 INFO  : Disconnected from the channel tcfchan#2.
+15:07:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:07:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:07:58 INFO  : 'fpga -state' command is executed.
+15:07:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:07:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:08:56 INFO  : Disconnected from the channel tcfchan#3.
+15:08:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:08:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:08:57 INFO  : 'fpga -state' command is executed.
+15:08:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:08:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:09:25 INFO  : Disconnected from the channel tcfchan#4.
+15:09:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:09:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:09:26 INFO  : 'fpga -state' command is executed.
+15:09:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:09:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:09:50 ERROR : channel "tcfchan#5" closed
+15:10:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:10:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:10:08 INFO  : 'fpga -state' command is executed.
+15:10:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:10:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:10:46 ERROR : channel "tcfchan#6" closed
+15:11:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:11:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:11:26 INFO  : 'fpga -state' command is executed.
+15:12:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:12:03 INFO  : 'fpga -state' command is executed.
+15:12:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:12:31 INFO  : Disconnected from the channel tcfchan#7.
+15:12:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:12:32 INFO  : 'fpga -state' command is executed.
+15:12:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:12:45 INFO  : Disconnected from the channel tcfchan#8.
+15:12:46 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:13:13 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:13:13 INFO  : Processing command line option -hwspec /home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper.hdf.
+15:13:14 INFO  : XSDB server has started successfully.
+15:13:14 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+15:13:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:13:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:13:30 INFO  : 'fpga -state' command is executed.
+15:14:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:14:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:14:11 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+15:14:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:14:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:14:19 INFO  : 'fpga -state' command is executed.
+15:14:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:14:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:14:56 INFO  : Disconnected from the channel tcfchan#1.
+15:14:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:14:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:14:57 INFO  : 'fpga -state' command is executed.
+15:14:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:14:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:28:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:28:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:28:25 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+15:28:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:28:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:28:39 INFO  : 'fpga -state' command is executed.
+15:28:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:28:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:00:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:00:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:00:52 INFO  : 'fpga -state' command is executed.
+16:00:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:00:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:23:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:23:24 INFO  : 'fpga -state' command is executed.
+16:23:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:23:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:23:50 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+16:23:57 INFO  : Disconnected from the channel tcfchan#2.
+16:23:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:23:58 INFO  : 'fpga -state' command is executed.
+16:23:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:32:22 ERROR : channel "tcfchan#2" closed
+16:32:22 ERROR : channel "tcfchan#2" closed
+16:32:22 ERROR : channel "tcfchan#2" closed
+16:32:22 INFO  : Disconnected from the channel tcfchan#3.
+16:32:23 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:36:13 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+16:36:13 INFO  : Processing command line option -hwspec /home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper.hdf.
+16:36:14 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:36:15 INFO  : XSDB server has started successfully.
+16:36:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:36:46 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+16:45:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:45:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:45:47 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+16:46:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:46:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:46:02 INFO  : 'fpga -state' command is executed.
+16:46:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:46:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:52:55 INFO  : Disconnected from the channel tcfchan#1.
+16:52:55 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:34:57 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2457
+15:34:58 INFO  : Processing command line option -hwspec /home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper.hdf.
+15:34:59 INFO  : XSDB server has started successfully.
+15:34:59 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+15:36:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:36:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:36:33 INFO  : 'fpga -state' command is executed.
+15:37:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:37:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:37:06 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+15:37:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:37:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:37:15 INFO  : 'fpga -state' command is executed.
+15:37:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:37:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:39:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:39:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:39:27 INFO  : 'fpga -state' command is executed.
+15:39:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:39:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:39:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:39:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:39:50 INFO  : 'fpga -state' command is executed.
+15:39:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:39:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:40:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:40:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+15:40:03 INFO  : 'fpga -state' command is executed.
+15:40:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:40:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:40:22 INFO  : Disconnected from the channel tcfchan#1.
+15:40:22 ERROR : channel "tcfchan#1" closed
+15:40:22 ERROR : channel "tcfchan#1" closed
+15:40:22 ERROR : channel "tcfchan#1" closed
+15:40:23 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:56:17 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2457
+15:56:18 INFO  : Processing command line option -hwspec /home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/design_1_wrapper.hdf.
+15:56:18 INFO  : XSDB server has started successfully.
+15:56:19 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.

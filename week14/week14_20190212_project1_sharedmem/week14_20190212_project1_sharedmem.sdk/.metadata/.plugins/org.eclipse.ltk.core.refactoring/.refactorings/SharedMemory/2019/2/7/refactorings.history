@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;SharedMemory/src/helloworld.c&apos; to &apos;SharedMemory&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="SharedMemory" stamp="1549984546228" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;SharedMemory/src/SharedMemory&apos; to &apos;SharedMemory.c&apos;" description="Rename resource &apos;SharedMemory&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/SharedMemory" name="SharedMemory.c" stamp="1549984558430" updateReferences="true"/>
+</session>

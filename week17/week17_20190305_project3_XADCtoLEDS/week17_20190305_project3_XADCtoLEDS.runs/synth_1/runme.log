@@ -1,0 +1,265 @@
+
+*** Running vivado
+    with args -log XADCtoLEDs.vds -m64 -mode batch -messageDb vivado.pb -notrace -source XADCtoLEDs.tcl
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source XADCtoLEDs.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+Command: synth_design -top XADCtoLEDs -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -217 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 922.051 ; gain = 143.457 ; free physical = 2635 ; free virtual = 12655
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'XADCtoLEDs' [/home/physics/Labs/week17/week17_20190305_project3_XADCtoLEDS/week17_20190305_project3_XADCtoLEDS.srcs/sources_1/new/XADCtoLEDs.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [/home/physics/Labs/week17/week17_20190305_project3_XADCtoLEDS/week17_20190305_project3_XADCtoLEDS.runs/synth_1/.Xil/Vivado-402-physics-ThinkPad-13-2nd-Gen/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-256] done synthesizing module 'XADCtoLEDs' (1#1) [/home/physics/Labs/week17/week17_20190305_project3_XADCtoLEDS/week17_20190305_project3_XADCtoLEDS.srcs/sources_1/new/XADCtoLEDs.vhd:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 958.332 ; gain = 179.738 ; free physical = 2597 ; free virtual = 12618
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 958.332 ; gain = 179.738 ; free physical = 2597 ; free virtual = 12618
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/physics/Labs/week17/week17_20190305_project3_XADCtoLEDS/week17_20190305_project3_XADCtoLEDS.srcs/constrs_1/imports/Labs/Zedboard_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [/home/physics/Labs/week17/week17_20190305_project3_XADCtoLEDS/week17_20190305_project3_XADCtoLEDS.srcs/constrs_1/imports/Labs/Zedboard_Master.xdc:367]
+Finished Parsing XDC File [/home/physics/Labs/week17/week17_20190305_project3_XADCtoLEDS/week17_20190305_project3_XADCtoLEDS.srcs/constrs_1/imports/Labs/Zedboard_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/physics/Labs/week17/week17_20190305_project3_XADCtoLEDS/week17_20190305_project3_XADCtoLEDS.srcs/constrs_1/imports/Labs/Zedboard_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/XADCtoLEDs_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/XADCtoLEDs_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1237.074 ; gain = 0.000 ; free physical = 2413 ; free virtual = 12434
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.074 ; gain = 458.480 ; free physical = 2410 ; free virtual = 12432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.074 ; gain = 458.480 ; free physical = 2410 ; free virtual = 12432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.074 ; gain = 458.480 ; free physical = 2410 ; free virtual = 12432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.074 ; gain = 458.480 ; free physical = 2403 ; free virtual = 12425
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module XADCtoLEDs 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.074 ; gain = 458.480 ; free physical = 2403 ; free virtual = 12425
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.074 ; gain = 458.480 ; free physical = 2403 ; free virtual = 12425
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.074 ; gain = 458.480 ; free physical = 2403 ; free virtual = 12425
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+WARNING: [Synth 8-3332] Sequential element (\output_reg_reg[7] ) is unused and will be removed from module XADCtoLEDs.
+WARNING: [Synth 8-3332] Sequential element (\output_reg_reg[6] ) is unused and will be removed from module XADCtoLEDs.
+WARNING: [Synth 8-3332] Sequential element (\output_reg_reg[5] ) is unused and will be removed from module XADCtoLEDs.
+WARNING: [Synth 8-3332] Sequential element (\output_reg_reg[4] ) is unused and will be removed from module XADCtoLEDs.
+WARNING: [Synth 8-3332] Sequential element (\output_reg_reg[3] ) is unused and will be removed from module XADCtoLEDs.
+WARNING: [Synth 8-3332] Sequential element (\output_reg_reg[2] ) is unused and will be removed from module XADCtoLEDs.
+WARNING: [Synth 8-3332] Sequential element (\output_reg_reg[1] ) is unused and will be removed from module XADCtoLEDs.
+WARNING: [Synth 8-3332] Sequential element (\output_reg_reg[0] ) is unused and will be removed from module XADCtoLEDs.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.074 ; gain = 458.480 ; free physical = 2403 ; free virtual = 12425
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.074 ; gain = 458.480 ; free physical = 2403 ; free virtual = 12425
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.074 ; gain = 458.480 ; free physical = 2403 ; free virtual = 12425
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1241.074 ; gain = 462.480 ; free physical = 2348 ; free virtual = 12370
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1241.074 ; gain = 462.480 ; free physical = 2348 ; free virtual = 12370
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1250.090 ; gain = 471.496 ; free physical = 2340 ; free virtual = 12362
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1250.090 ; gain = 471.496 ; free physical = 2340 ; free virtual = 12362
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1250.090 ; gain = 471.496 ; free physical = 2340 ; free virtual = 12362
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1250.090 ; gain = 471.496 ; free physical = 2340 ; free virtual = 12362
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1250.090 ; gain = 471.496 ; free physical = 2339 ; free virtual = 12361
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1250.090 ; gain = 471.496 ; free physical = 2339 ; free virtual = 12361
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xadc_wiz_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |xadc_wiz_0 |     1|
+|2     |BUFG       |     1|
+|3     |FDRE       |     8|
+|4     |IBUF       |     3|
+|5     |OBUF       |     8|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    46|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1250.090 ; gain = 471.496 ; free physical = 2339 ; free virtual = 12361
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1250.090 ; gain = 84.297 ; free physical = 2339 ; free virtual = 12361
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1250.090 ; gain = 471.496 ; free physical = 2339 ; free virtual = 12361
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1250.090 ; gain = 363.039 ; free physical = 2339 ; free virtual = 12360
+report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1258.094 ; gain = 0.000 ; free physical = 2338 ; free virtual = 12359
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  5 16:34:36 2019...

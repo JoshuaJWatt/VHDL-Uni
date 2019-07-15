@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../week20_20190328_projecta_ZBrng.srcs/sources_1/new/ZBrng.vhd"
+
+# Do not sort compile order
+nosort

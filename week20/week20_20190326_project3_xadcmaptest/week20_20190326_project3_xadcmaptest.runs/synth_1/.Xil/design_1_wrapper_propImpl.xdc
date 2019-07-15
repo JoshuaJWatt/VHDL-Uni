@@ -1,0 +1,10 @@
+set_property SRC_FILE_INFO {cfile:/home/physics/Labs/week14/week14_20190212_project1_sharedmem/week14_20190212_project1_sharedmem.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.xdc rfile:../../../../../week14/week14_20190212_project1_sharedmem/week14_20190212_project1_sharedmem.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.xdc id:1 order:EARLY scoped_inst:design_1_i/clk_wiz_0/U0} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/physics/Labs/week14/week14_20190212_project1_sharedmem/week14_20190212_project1_sharedmem.srcs/constrs_1/imports/Labs/Basys3_Master.xdc rfile:../../../../../week14/week14_20190212_project1_sharedmem/week14_20190212_project1_sharedmem.srcs/constrs_1/imports/Labs/Basys3_Master.xdc id:2} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:56 export:INPUT save:INPUT read:READ} [current_design]
+set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.1
+set_property src_info {type:XDC file:2 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN W5 [get_ports clk]
+set_property src_info {type:XDC file:2 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+set_property src_info {type:XDC file:2 line:9 export:INPUT save:INPUT read:READ} [current_design]
+create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports clk]

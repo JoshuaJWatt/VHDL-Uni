@@ -1,0 +1,11 @@
+15:14:53 **** Incremental Build of configuration Debug for project Hello_World ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Hello_World_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+mb-gcc: error while loading shared libraries: libstdc++.so.6: wrong ELF class: ELFCLASS64
+make: *** [src/helloworld.o] Error 127
+src/subdir.mk:24: recipe for target 'src/helloworld.o' failed
+
+15:14:53 Build Finished (took 273ms)
+

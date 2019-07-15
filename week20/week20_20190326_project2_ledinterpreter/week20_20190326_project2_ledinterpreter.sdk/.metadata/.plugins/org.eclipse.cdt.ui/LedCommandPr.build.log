@@ -1,0 +1,31 @@
+15:33:45 **** Auto Build of configuration Debug for project LedCommandPr ****
+make all 
+Building file: ../src/LedCommandPr.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LedCommandPr.o" -I../../LedCommandPr_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/LedCommandPr.d" -MT"src/LedCommandPr.d" -o "src/LedCommandPr.o" "../src/LedCommandPr.c"
+../src/LedCommandPr.c: In function 'main':
+../src/LedCommandPr.c:17:2: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+  init_platform();
+  ^
+../src/LedCommandPr.c:56:16: warning: assignment makes pointer from integer without a cast
+        pshared = XPAR_BRAM_0_BASEADDR;
+                ^
+../src/LedCommandPr.c:72:2: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+  cleanup_platform();
+  ^
+Finished building: ../src/LedCommandPr.c
+ 
+Building target: LedCommandPr.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LedCommandPr_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "LedCommandPr.elf"  ./src/LedCommandPr.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: LedCommandPr.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size LedCommandPr.elf  |tee "LedCommandPr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12896	    292	   2100	  15288	   3bb8	LedCommandPr.elf
+Finished building: LedCommandPr.elf.size
+ 
+
+15:33:46 Build Finished (took 361ms)
+

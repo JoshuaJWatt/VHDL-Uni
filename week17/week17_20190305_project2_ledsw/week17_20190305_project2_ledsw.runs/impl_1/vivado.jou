@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Tue Mar  5 14:32:42 2019
+# Process ID: 26376
+# Log file: /home/physics/Labs/week17/week17_20190305_project2_ledsw/week17_20190305_project2_ledsw.runs/impl_1/ledsw.vdi
+# Journal file: /home/physics/Labs/week17/week17_20190305_project2_ledsw/week17_20190305_project2_ledsw.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source ledsw.tcl -notrace

@@ -1,0 +1,29 @@
+15:40:01 **** Incremental Build of configuration Debug for project Hello_World2 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Hello_World2_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../Hello_World2_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: Hello_World2.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hello_World2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -o "Hello_World2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/platform.o: In function `enable_caches':
+/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/Hello_World2/Debug/../src/platform.c:58: undefined reference to `microblaze_enable_icache'
+/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/Hello_World2/Debug/../src/platform.c:61: undefined reference to `microblaze_enable_dcache'
+./src/platform.o: In function `disable_caches':
+/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/Hello_World2/Debug/../src/platform.c:69: undefined reference to `Xil_DCacheDisable'
+/home/physics/Labs/week13/20190205_week13_project1a_microblazeat2/20190205_week13_project1a_microblazeat2.sdk/Hello_World2/Debug/../src/platform.c:70: undefined reference to `Xil_ICacheDisable'
+/opt/Xilinx/SDK/2015.1/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/../../../../microblaze-xilinx-elf/lib/le/libxil.a(print.o): In function `print':
+(.text+0x20): undefined reference to `outbyte'
+makefile:36: recipe for target 'Hello_World2.elf' failed
+collect2: error: ld returned 1 exit status
+make: *** [Hello_World2.elf] Error 1
+
+15:40:02 Build Finished (took 381ms)
+

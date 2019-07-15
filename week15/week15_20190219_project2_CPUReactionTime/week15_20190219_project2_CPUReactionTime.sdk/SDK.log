@@ -1,0 +1,125 @@
+16:10:28 INFO  : Processing command line option -hwspec /home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/design_1_wrapper.hdf.
+16:10:30 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+16:10:31 INFO  : XSDB server has started successfully.
+16:19:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:19:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:19:55 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:20:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:20:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:20:03 INFO  : 'fpga -state' command is executed.
+16:20:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:20:03 INFO  : Context for processor 'microblaze_0' is selected.
+16:20:03 INFO  : Processor reset is completed for 'microblaze_0'.
+16:20:04 INFO  : Context for processor 'microblaze_0' is selected.
+16:20:04 INFO  : The application '/home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/CPUReactionTime/Debug/CPUReactionTime.elf' is downloaded to processor 'microblaze_0'.
+16:20:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+dow /home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/CPUReactionTime/Debug/CPUReactionTime.elf
+----------------End of Script----------------
+
+16:20:04 INFO  : Context for processor 'microblaze_0' is selected.
+16:20:04 INFO  : 'con' command is executed.
+16:20:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+con
+----------------End of Script----------------
+
+16:21:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:21:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27D66A" && level==0} -index 0' command is executed.
+16:21:35 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:21:50 ERROR : channel "tcfchan#1" closed
+16:22:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:22:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27D66A" && level==0} -index 0' command is executed.
+16:22:02 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:22:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:22:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27D66A" && level==0} -index 0' command is executed.
+16:22:07 INFO  : 'fpga -state' command is executed.
+16:22:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:22:07 INFO  : Context for processor 'microblaze_0' is selected.
+16:22:07 INFO  : Processor reset is completed for 'microblaze_0'.
+16:22:08 INFO  : Context for processor 'microblaze_0' is selected.
+16:22:08 INFO  : The application '/home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/CPUReactionTime/Debug/CPUReactionTime.elf' is downloaded to processor 'microblaze_0'.
+16:22:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27D66A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27D66A"} -index 0
+dow /home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/CPUReactionTime/Debug/CPUReactionTime.elf
+----------------End of Script----------------
+
+16:22:08 INFO  : Context for processor 'microblaze_0' is selected.
+16:22:08 INFO  : 'con' command is executed.
+16:22:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27D66A"} -index 0
+con
+----------------End of Script----------------
+
+16:27:27 INFO  : Disconnected from the channel tcfchan#2.
+16:27:28 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:40:41 INFO  : Processing command line option -hwspec /home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/design_1_wrapper.hdf.
+16:40:41 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+16:40:43 INFO  : XSDB server has started successfully.
+16:40:43 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:40:43 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1550594381000,  Project:1550592594000
+16:40:43 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from /home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/design_1_wrapper.hdf.
+16:40:43 INFO  : Copied contents of /home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+16:40:43 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:40:44 INFO  : 
+16:40:45 INFO  : Updating hardware inferred compiler options for CPUReactionTime.
+16:40:45 INFO  : Clearing existing target manager status.
+16:47:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:47:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:47:20 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:47:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:47:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:47:25 INFO  : 'fpga -state' command is executed.
+16:47:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:47:25 INFO  : Context for processor 'microblaze_0' is selected.
+16:47:25 INFO  : Processor reset is completed for 'microblaze_0'.
+16:47:26 INFO  : Context for processor 'microblaze_0' is selected.
+16:47:26 INFO  : The application '/home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/CPUReactionTime/Debug/CPUReactionTime.elf' is downloaded to processor 'microblaze_0'.
+16:47:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+dow /home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/CPUReactionTime/Debug/CPUReactionTime.elf
+----------------End of Script----------------
+
+16:47:26 INFO  : Context for processor 'microblaze_0' is selected.
+16:47:26 INFO  : 'con' command is executed.
+16:47:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+con
+----------------End of Script----------------
+
+16:56:19 INFO  : Disconnected from the channel tcfchan#1.
+16:56:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:56:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:56:19 INFO  : 'fpga -state' command is executed.
+16:56:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:56:20 INFO  : Context for processor 'microblaze_0' is selected.
+16:56:20 INFO  : Processor reset is completed for 'microblaze_0'.
+16:56:20 INFO  : Context for processor 'microblaze_0' is selected.
+16:56:20 INFO  : The application '/home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/CPUReactionTime/Debug/CPUReactionTime.elf' is downloaded to processor 'microblaze_0'.
+16:56:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+dow /home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/CPUReactionTime/Debug/CPUReactionTime.elf
+----------------End of Script----------------
+
+16:56:20 INFO  : Context for processor 'microblaze_0' is selected.
+16:56:20 INFO  : 'con' command is executed.
+16:56:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Basys3 210183A27BC4A"} -index 0
+con
+----------------End of Script----------------
+
+16:56:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:56:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A27BC4A" && level==0} -index 0' command is executed.
+16:56:44 INFO  : FPGA configured successfully with bitstream "/home/physics/Labs/week15/week15_20190219_project2_CPUReactionTime/week15_20190219_project2_CPUReactionTime.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"

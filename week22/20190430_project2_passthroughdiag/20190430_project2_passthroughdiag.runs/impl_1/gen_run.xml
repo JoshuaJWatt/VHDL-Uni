@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1556639465">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="passthrough1_wrapper.vdi"/>
+  <File Type="BG-DRC" Name="passthrough1_wrapper.drc"/>
+  <File Type="BG-BGN" Name="passthrough1_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="passthrough1_wrapper.sysdef"/>
+  <File Type="BITSTR-MMI" Name="passthrough1_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="passthrough1_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="passthrough1_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="passthrough1_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="passthrough1_wrapper.msk"/>
+  <File Type="BG-BIN" Name="passthrough1_wrapper.bin"/>
+  <File Type="BG-BIT" Name="passthrough1_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="passthrough1_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="passthrough1_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="passthrough1_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="passthrough1_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="passthrough1_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="passthrough1_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="passthrough1_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="passthrough1_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="passthrough1_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="passthrough1_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="passthrough1_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="passthrough1_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="passthrough1_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="passthrough1_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DCP" Name="passthrough1_wrapper_routed.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="passthrough1_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="passthrough1_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="passthrough1_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="passthrough1_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="passthrough1_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="passthrough1_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="passthrough1_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="passthrough1_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="passthrough1_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="passthrough1_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="passthrough1_wrapper_placed.dcp"/>
+  <File Type="PWROPT-DRC" Name="passthrough1_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="passthrough1_wrapper_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="passthrough1_wrapper.hwdef"/>
+  <File Type="OPT-DRC" Name="passthrough1_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="passthrough1_wrapper_opt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="passthrough1_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="PA-TCL" Name="passthrough1_wrapper.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/passthrough1/passthrough1.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/passthrough1/hdl/passthrough1_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="passthrough1_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Labs/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1537878124"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

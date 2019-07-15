@@ -1,0 +1,70 @@
+10:09:45 **** Incremental Build of configuration Debug for project ledadcsharedmem ****
+make all 
+make: Nothing to be done for 'all'.
+10:10:01 **** Incremental Build of configuration Debug for project ledadcsharedmem ****
+make all 
+make: Nothing to be done for 'all'.
+12:25:46 **** Incremental Build of configuration Debug for project ledadcsharedmem ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ledadcsharedmem_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:17:2: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+  init_platform();
+  ^
+../src/helloworld.c:13:31: error: invalid suffix "cx" on integer constant
+src/subdir.mk:24: recipe for target 'src/helloworld.o' failed
+ #define COMMAND_BUFFER_LENGTH 200cx
+                               ^
+../src/helloworld.c:23:17: note: in expansion of macro 'COMMAND_BUFFER_LENGTH'
+  char cmdbuffer[COMMAND_BUFFER_LENGTH];
+                 ^
+../src/helloworld.c:13:31: error: invalid suffix "cx" on integer constant
+ #define COMMAND_BUFFER_LENGTH 200cx
+                               ^
+../src/helloworld.c:32:24: note: in expansion of macro 'COMMAND_BUFFER_LENGTH'
+      while(charcount < COMMAND_BUFFER_LENGTH)
+                        ^
+../src/helloworld.c:56:16: warning: assignment makes pointer from integer without a cast
+        pshared = XPAR_BRAM_0_BASEADDR;
+                ^
+../src/helloworld.c:72:2: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+  cleanup_platform();
+  ^
+../src/helloworld.c:23:7: warning: unused variable 'cmdbuffer' [-Wunused-variable]
+  char cmdbuffer[COMMAND_BUFFER_LENGTH];
+       ^
+make: *** [src/helloworld.o] Error 1
+12:26:11 **** Incremental Build of configuration Debug for project ledadcsharedmem ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ledadcsharedmem_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:17:2: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+  init_platform();
+  ^
+../src/helloworld.c:13:31: error: invalid suffix "cx" on integer constant
+ #define COMMAND_BUFFER_LENGTH 200cx
+                               ^
+../src/helloworld.c:23:17: note: in expansion of macro 'COMMAND_BUFFER_LENGTH'
+  char cmdbuffer[COMMAND_BUFFER_LENGTH];
+                 ^
+../src/helloworld.c:13:31: error: invalid suffix "cx" on integer constant
+ #define COMMAND_BUFFER_LENGTH 200cx
+                               ^
+../src/helloworld.c:32:24: note: in expansion of macro 'COMMAND_BUFFER_LENGTH'
+      while(charcount < COMMAND_BUFFER_LENGTH)
+                        ^
+../src/helloworld.c:56:16: warning: assignment makes pointer from integer without a cast
+        pshared = XPAR_BRAM_0_BASEADDR;
+                ^
+../src/helloworld.c:72:2: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+  cleanup_platform();
+  ^
+../src/helloworld.c:23:7: warning: unused variable 'cmdbuffer' [-Wunused-variable]
+  char cmdbuffer[COMMAND_BUFFER_LENGTH];
+       ^
+make: *** [src/helloworld.o] Error 1
+src/subdir.mk:24: recipe for target 'src/helloworld.o' failed

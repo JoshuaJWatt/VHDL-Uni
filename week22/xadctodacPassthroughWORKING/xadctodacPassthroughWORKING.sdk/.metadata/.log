@@ -1,0 +1,18 @@
+!SESSION 2019-05-17 16:44:34.439 -----------------------------------------------
+eclipse.buildId=2015.1
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/physics/Labs/week22/xadctodacPassthroughWORKING/xadctodacPassthroughWORKING.sdk
+
+!ENTRY org.eclipse.core.jobs 4 2 2019-05-17 16:44:40.303
+!MESSAGE An internal error occurred during: "Importing Hardware Specification".
+!STACK 0
+java.lang.NullPointerException
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:166)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:152)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:127)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:415)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:397)
+	at com.xilinx.sdk.startup.InitSDK$9.run(InitSDK.java:348)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)

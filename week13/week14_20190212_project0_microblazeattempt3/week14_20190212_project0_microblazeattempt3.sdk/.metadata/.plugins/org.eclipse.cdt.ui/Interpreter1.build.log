@@ -1,0 +1,49 @@
+16:21:23 **** Auto Build of configuration Debug for project Interpreter1 ****
+make all 
+Building file: ../src/Interpreter1.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Interpreter1.o" -I../../Interpreter1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/Interpreter1.d" -MT"src/Interpreter1.d" -o "src/Interpreter1.o" "../src/Interpreter1.c"
+../src/Interpreter1.c:14:0: warning: "XPAR_BRAM_0_BASEADDR" redefined
+ #define XPAR_BRAM_0_BASEADDR 0xC0000000
+ ^
+In file included from ../src/Interpreter1.c:6:0:
+../../Interpreter1_bsp/microblaze_0/include/xparameters.h:472:0: note: this is the location of the previous definition
+ #define XPAR_BRAM_0_BASEADDR 0x00000000
+ ^
+../src/Interpreter1.c: In function 'main':
+../src/Interpreter1.c:19:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/Interpreter1.c:42:8: warning: implicit declaration of function 'strstr' [-Wimplicit-function-declaration]
+        if(strstr(cmdbuffer, "gain")!=0)
+        ^
+../src/Interpreter1.c:42:11: warning: incompatible implicit declaration of built-in function 'strstr'
+        if(strstr(cmdbuffer, "gain")!=0)
+           ^
+../src/Interpreter1.c:64:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+../src/Interpreter1.c:22:9: warning: variable 'gain' set but not used [-Wunused-but-set-variable]
+     int gain;
+         ^
+Finished building: ../src/Interpreter1.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../Interpreter1_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: Interpreter1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Interpreter1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "Interpreter1.elf"  ./src/Interpreter1.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Interpreter1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Interpreter1.elf  |tee "Interpreter1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12868	    292	   2104	  15264	   3ba0	Interpreter1.elf
+Finished building: Interpreter1.elf.size
+ 
+
+16:21:23 Build Finished (took 419ms)
+

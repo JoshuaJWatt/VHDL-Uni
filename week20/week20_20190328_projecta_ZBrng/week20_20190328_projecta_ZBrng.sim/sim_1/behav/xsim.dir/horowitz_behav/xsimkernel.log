@@ -1,0 +1,4 @@
+Running: xsim.dir/horowitz_behav/xsimk -simmode gui -wdb horowitz_behav.wdb -simrunnum 0 -socket 42557
+Design successfully loaded
+Design Loading Memory Usage: 82528 KB (Peak: 82548 KB)
+Design Loading CPU Usage: 20 ms
