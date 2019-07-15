@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1538487164">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="tntynsp.vdi"/>
+  <File Type="BG-DRC" Name="tntynsp.drc"/>
+  <File Type="BG-BGN" Name="tntynsp.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="tntynsp.sysdef"/>
+  <File Type="BITSTR-MMI" Name="tntynsp.mmi"/>
+  <File Type="BITSTR-BMM" Name="tntynsp_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="tntynsp.nky"/>
+  <File Type="BITSTR-RBT" Name="tntynsp.rbt"/>
+  <File Type="BITSTR-MSK" Name="tntynsp.msk"/>
+  <File Type="BG-BIN" Name="tntynsp.bin"/>
+  <File Type="BG-BIT" Name="tntynsp.bit"/>
+  <File Type="PLACE-SIMILARITY" Name="tntynsp_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="tntynsp_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="tntynsp_utilization_placed.pb"/>
+  <File Type="PLACE-DCP" Name="tntynsp_placed.dcp"/>
+  <File Type="PWROPT-DRC" Name="tntynsp_drc_pwropted.rpt"/>
+  <File Type="PLACE-CTRL" Name="tntynsp_control_sets_placed.rpt"/>
+  <File Type="PWROPT-DCP" Name="tntynsp_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="tntynsp.hwdef"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="PLACE-IO" Name="tntynsp_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="tntynsp_utilization_placed.rpt"/>
+  <File Type="OPT-DCP" Name="tntynsp_opt.dcp"/>
+  <File Type="OPT-DRC" Name="tntynsp_drc_opted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="tntynsp_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="tntynsp_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="tntynsp_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="tntynsp_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="tntynsp_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="tntynsp_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="tntynsp_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="tntynsp_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="tntynsp_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="tntynsp_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="tntynsp_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="tntynsp_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="tntynsp_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="tntynsp_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="tntynsp_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="tntynsp_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="tntynsp_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="tntynsp_timing_summary_postroute_physopted.rpt"/>
+  <File Type="PA-TCL" Name="tntynsp.tcl"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="tntynsp_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="tntynsp_timing_summary_postroute_physopted.rpx"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/tntynsp.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="tntynsp"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Labs/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1537878124"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

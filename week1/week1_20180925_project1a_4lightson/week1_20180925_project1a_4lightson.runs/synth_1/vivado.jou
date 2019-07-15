@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Tue Sep 25 14:48:10 2018
+# Process ID: 7129
+# Log file: /home/physics/Labs/week1lab/week1_20180925_project1a_4lightson/week1_20180925_project1a_4lightson.runs/synth_1/fourlightson.vds
+# Journal file: /home/physics/Labs/week1lab/week1_20180925_project1a_4lightson/week1_20180925_project1a_4lightson.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source fourlightson.tcl -notrace

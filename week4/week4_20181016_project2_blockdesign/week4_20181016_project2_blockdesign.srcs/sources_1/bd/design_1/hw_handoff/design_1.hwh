@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Oct 16 16:11:48 2018" VIVADOVERSION="2015.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="design_1" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Sevbittwo_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Sevbittwo_0" PORT="sw"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="Sevbittwo_0_led">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Sevbittwo_0" PORT="led"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="6" NAME="seg" RIGHT="0" SIGIS="undef" SIGNAME="Sevbittwo_0_seg">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Sevbittwo_0" PORT="seg"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="an" RIGHT="0" SIGIS="undef" SIGNAME="Sevbittwo_0_an">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Sevbittwo_0" PORT="an"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="dp" SIGIS="undef" SIGNAME="Sevbittwo_0_dp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Sevbittwo_0" PORT="dp"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/Sevbittwo_0" HWVERSION="1.0" INSTANCE="Sevbittwo_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Sevbittwo" VLNV="user.org:user:Sevbittwo:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Sevbittwo_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="15" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="Sevbittwo_0_led">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="led"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="seg" RIGHT="0" SIGIS="undef" SIGNAME="Sevbittwo_0_seg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="seg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="dp" SIGIS="undef" SIGNAME="Sevbittwo_0_dp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="dp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="an" RIGHT="0" SIGIS="undef" SIGNAME="Sevbittwo_0_an">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="an"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

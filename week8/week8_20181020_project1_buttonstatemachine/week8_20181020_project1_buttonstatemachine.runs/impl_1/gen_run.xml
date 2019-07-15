@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542734353">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="buttonstatemachine1.vdi"/>
+  <File Type="BG-DRC" Name="buttonstatemachine1.drc"/>
+  <File Type="BG-BGN" Name="buttonstatemachine1.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="buttonstatemachine1.sysdef"/>
+  <File Type="BITSTR-MMI" Name="buttonstatemachine1.mmi"/>
+  <File Type="BITSTR-BMM" Name="buttonstatemachine1_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="buttonstatemachine1.nky"/>
+  <File Type="BITSTR-RBT" Name="buttonstatemachine1.rbt"/>
+  <File Type="BITSTR-MSK" Name="buttonstatemachine1.msk"/>
+  <File Type="BG-BIN" Name="buttonstatemachine1.bin"/>
+  <File Type="BG-BIT" Name="buttonstatemachine1.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="buttonstatemachine1_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="buttonstatemachine1_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="buttonstatemachine1_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="buttonstatemachine1_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="buttonstatemachine1_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="buttonstatemachine1_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="buttonstatemachine1_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="buttonstatemachine1_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="buttonstatemachine1_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="buttonstatemachine1_route_status.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="buttonstatemachine1_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="buttonstatemachine1_power_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="buttonstatemachine1_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="buttonstatemachine1_drc_routed.rpt"/>
+  <File Type="ROUTE-DCP" Name="buttonstatemachine1_routed.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="buttonstatemachine1_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="buttonstatemachine1_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="buttonstatemachine1_postplace_pwropt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="buttonstatemachine1_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="buttonstatemachine1_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="buttonstatemachine1_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="buttonstatemachine1_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="buttonstatemachine1_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="buttonstatemachine1_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="buttonstatemachine1_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="buttonstatemachine1_placed.dcp"/>
+  <File Type="PWROPT-DRC" Name="buttonstatemachine1_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="buttonstatemachine1_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="buttonstatemachine1.hwdef"/>
+  <File Type="OPT-DRC" Name="buttonstatemachine1_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="buttonstatemachine1_opt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="buttonstatemachine1_timing_summary_postroute_physopted.pb"/>
+  <File Type="PA-TCL" Name="buttonstatemachine1.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/buttonstatemachine1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="buttonstatemachine1"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Labs/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1537878124"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

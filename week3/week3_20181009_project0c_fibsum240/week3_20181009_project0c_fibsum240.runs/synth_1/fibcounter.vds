@@ -1,0 +1,364 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Tue Oct  9 16:03:11 2018
+# Process ID: 9710
+# Log file: /home/physics/Labs/week3/week3_20181009_project0c_fibsum240/week3_20181009_project0c_fibsum240.runs/synth_1/fibcounter.vds
+# Journal file: /home/physics/Labs/week3/week3_20181009_project0c_fibsum240/week3_20181009_project0c_fibsum240.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source fibcounter.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+Command: synth_design -top fibcounter -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -70 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 922.051 ; gain = 143.457 ; free physical = 4485 ; free virtual = 14138
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [/home/physics/Labs/week3/week3_20181009_project0c_fibsum240/week3_20181009_project0c_fibsum240.srcs/sources_1/new/fibsumtwofourty.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'fibcounter' [/home/physics/Labs/week3/week3_20181009_project0c_fibsum240/week3_20181009_project0c_fibsum240.srcs/sources_1/new/fibsumtwofourty.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'fibcounter' (1#1) [/home/physics/Labs/week3/week3_20181009_project0c_fibsum240/week3_20181009_project0c_fibsum240.srcs/sources_1/new/fibsumtwofourty.vhd:37]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 957.332 ; gain = 178.738 ; free physical = 4448 ; free virtual = 14101
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 957.332 ; gain = 178.738 ; free physical = 4448 ; free virtual = 14101
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/physics/Labs/week3/week3_20181009_project0c_fibsum240/week3_20181009_project0c_fibsum240.srcs/constrs_1/imports/Labs/Basys3_Master.xdc]
+Finished Parsing XDC File [/home/physics/Labs/week3/week3_20181009_project0c_fibsum240/week3_20181009_project0c_fibsum240.srcs/constrs_1/imports/Labs/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1254.363 ; gain = 0.000 ; free physical = 4281 ; free virtual = 13935
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4281 ; free virtual = 13934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4281 ; free virtual = 13934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4281 ; free virtual = 13934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4273 ; free virtual = 13927
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    256 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fibcounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    256 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4273 ; free virtual = 13927
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4265 ; free virtual = 13919
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4265 ; free virtual = 13919
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[31] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[30] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[29] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[28] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[27] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[26] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[25] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[24] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[23] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[22] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[21] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[20] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[19] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[18] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[17] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[16] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[15] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[14] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[13] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[12] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[11] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[10] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[9] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[8] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[7] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[6] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[5] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[4] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[3] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[2] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[1] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\secondfib_reg_reg[0] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[255] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[254] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[253] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[252] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[251] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[250] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[249] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[248] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[247] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[246] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[245] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[244] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[243] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[242] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[241] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[240] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[239] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[238] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[237] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[236] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[235] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[234] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[233] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[232] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[231] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[230] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[229] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[228] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[227] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[226] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[225] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[224] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[223] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[222] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[221] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[220] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[219] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[218] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[217] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[216] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[215] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[214] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[213] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[212] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[211] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[210] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[209] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[208] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[207] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[206] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[205] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[204] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[203] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[202] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[201] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[200] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[199] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[198] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[197] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[196] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[195] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[194] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[193] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[192] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[191] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[190] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[189] ) is unused and will be removed from module fibcounter.
+WARNING: [Synth 8-3332] Sequential element (\fibcount_reg_reg[188] ) is unused and will be removed from module fibcounter.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4257 ; free virtual = 13911
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4257 ; free virtual = 13911
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4257 ; free virtual = 13911
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4204 ; free virtual = 13857
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4204 ; free virtual = 13857
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4177 ; free virtual = 13830
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4177 ; free virtual = 13830
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4177 ; free virtual = 13830
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4177 ; free virtual = 13830
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4177 ; free virtual = 13830
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4177 ; free virtual = 13830
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |    33|
+|4     |LUT3   |    16|
+|5     |FDRE   |    32|
+|6     |IBUF   |     2|
+|7     |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   108|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4176 ; free virtual = 13830
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 288 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1254.363 ; gain = 70.281 ; free physical = 4176 ; free virtual = 13829
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1254.363 ; gain = 475.770 ; free physical = 4176 ; free virtual = 13829
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 32 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1254.363 ; gain = 367.312 ; free physical = 4176 ; free virtual = 13829
+report_utilization: Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:00.68 . Memory (MB): peak = 1286.379 ; gain = 0.000 ; free physical = 4175 ; free virtual = 13828
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  9 16:03:32 2018...

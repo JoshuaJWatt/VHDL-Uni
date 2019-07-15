@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Tue Sep 25 16:32:23 2018
+# Process ID: 3119
+# Log file: /home/physics/Labs/week1lab/week1_20180925_project1h_bounceosc/week1_20180925_project1h_bounceosc.runs/impl_1/bounceosc.vdi
+# Journal file: /home/physics/Labs/week1lab/week1_20180925_project1h_bounceosc/week1_20180925_project1h_bounceosc.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source bounceosc.tcl -notrace

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Tue Mar 19 14:33:43 2019
+# Process ID: 7748
+# Log file: /home/physics/Labs/week5/week5_20181023_project1c_unsignedxadc/week5_20181023_project1c_unsignedxadc.runs/impl_1/potdiv.vdi
+# Journal file: /home/physics/Labs/week5/week5_20181023_project1c_unsignedxadc/week5_20181023_project1c_unsignedxadc.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source potdiv.tcl -notrace

@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Tue Oct 23 15:47:48 2018
+# Process ID: 4447
+# Log file: /home/physics/Labs/week5/weeek5_20181023_project1_potdriv/weeek5_20181023_project1_potdriv.runs/synth_1/potdriv.vds
+# Journal file: /home/physics/Labs/week5/weeek5_20181023_project1_potdriv/weeek5_20181023_project1_potdriv.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source potdriv.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+Command: synth_design -top potdriv -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -84 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 922.055 ; gain = 143.457 ; free physical = 4382 ; free virtual = 13978
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-2032] formal daddr_in is not declared [/home/physics/Labs/week5/weeek5_20181023_project1_potdriv/weeek5_20181023_project1_potdriv.srcs/sources_1/new/potdriv.vhd:53]
+ERROR: [Synth 8-2029] formal clk has no actual or default value [/home/physics/Labs/week5/weeek5_20181023_project1_potdriv/weeek5_20181023_project1_potdriv.srcs/sources_1/new/potdriv.vhd:51]
+INFO: [Synth 8-994] clk is declared here [/home/physics/Labs/week5/weeek5_20181023_project1_potdriv/weeek5_20181023_project1_potdriv.srcs/sources_1/new/potdriv.vhd:35]
+INFO: [Synth 8-994] xa2n14 is declared here [/home/physics/Labs/week5/weeek5_20181023_project1_potdriv/weeek5_20181023_project1_potdriv.srcs/sources_1/new/potdriv.vhd:37]
+INFO: [Synth 8-994] xa2p14 is declared here [/home/physics/Labs/week5/weeek5_20181023_project1_potdriv/weeek5_20181023_project1_potdriv.srcs/sources_1/new/potdriv.vhd:38]
+ERROR: [Synth 8-1031] drpadress is not declared [/home/physics/Labs/week5/weeek5_20181023_project1_potdriv/weeek5_20181023_project1_potdriv.srcs/sources_1/new/potdriv.vhd:91]
+INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [/home/physics/Labs/week5/weeek5_20181023_project1_potdriv/weeek5_20181023_project1_potdriv.srcs/sources_1/new/potdriv.vhd:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 956.336 ; gain = 177.738 ; free physical = 4347 ; free virtual = 13943
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+7 Infos, 2 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 23 15:47:55 2018...

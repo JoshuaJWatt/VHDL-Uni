@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1538488775">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="binarycount.vdi"/>
+  <File Type="BG-DRC" Name="binarycount.drc"/>
+  <File Type="BG-BGN" Name="binarycount.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="binarycount.sysdef"/>
+  <File Type="BITSTR-MMI" Name="binarycount.mmi"/>
+  <File Type="BITSTR-BMM" Name="binarycount_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="binarycount.nky"/>
+  <File Type="BITSTR-RBT" Name="binarycount.rbt"/>
+  <File Type="BITSTR-MSK" Name="binarycount.msk"/>
+  <File Type="BG-BIN" Name="binarycount.bin"/>
+  <File Type="BG-BIT" Name="binarycount.bit"/>
+  <File Type="PLACE-SIMILARITY" Name="binarycount_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="binarycount_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="binarycount_utilization_placed.pb"/>
+  <File Type="PLACE-DCP" Name="binarycount_placed.dcp"/>
+  <File Type="PWROPT-DRC" Name="binarycount_drc_pwropted.rpt"/>
+  <File Type="PLACE-CTRL" Name="binarycount_control_sets_placed.rpt"/>
+  <File Type="PWROPT-DCP" Name="binarycount_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="binarycount.hwdef"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="PLACE-IO" Name="binarycount_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="binarycount_utilization_placed.rpt"/>
+  <File Type="OPT-DCP" Name="binarycount_opt.dcp"/>
+  <File Type="OPT-DRC" Name="binarycount_drc_opted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="binarycount_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="binarycount_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="binarycount_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="binarycount_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="binarycount_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="binarycount_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="binarycount_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="binarycount_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="binarycount_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="binarycount_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="binarycount_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="binarycount_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="binarycount_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="binarycount_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="binarycount_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="binarycount_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="binarycount_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="binarycount_timing_summary_postroute_physopted.rpt"/>
+  <File Type="PA-TCL" Name="binarycount.tcl"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="binarycount_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="binarycount_timing_summary_postroute_physopted.rpx"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/binarycount.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="binarycount"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Labs/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1537878124"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

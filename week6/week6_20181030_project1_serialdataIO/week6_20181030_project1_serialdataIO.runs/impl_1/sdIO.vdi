@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Tue Mar 19 15:28:39 2019
+# Process ID: 6647
+# Log file: /home/physics/Labs/week6/week6_20181030_project1_serialdataIO/week6_20181030_project1_serialdataIO.runs/impl_1/sdIO.vdi
+# Journal file: /home/physics/Labs/week6/week6_20181030_project1_serialdataIO/week6_20181030_project1_serialdataIO.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source sdIO.tcl -notrace
+Command: open_checkpoint sdIO_routed.dcp
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2015.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/physics/Labs/week6/week6_20181030_project1_serialdataIO/week6_20181030_project1_serialdataIO.runs/impl_1/.Xil/Vivado-6647-physics-ThinkPad-13-2nd-Gen/dcp/sdIO.xdc]
+Finished Parsing XDC File [/home/physics/Labs/week6/week6_20181030_project1_serialdataIO/week6_20181030_project1_serialdataIO.runs/impl_1/.Xil/Vivado-6647-physics-ThinkPad-13-2nd-Gen/dcp/sdIO.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1112.078 ; gain = 0.000 ; free physical = 4944 ; free virtual = 14485
+Restored from archive | CPU: 0.000000 secs | Memory: 0.027039 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1112.078 ; gain = 0.000 ; free physical = 4944 ; free virtual = 14485
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 1215546
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -231 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[0]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[10]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[11]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[12]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[13]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[14]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[15]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[1]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[2]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[3]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[4]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[5]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[6]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[7]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[8]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (BUFC-1) Input Buffer Connections - Input buffer sw[9]_IBUF_inst has no loads. An input buffer must drive an internal load.
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC 23-20] Rule violation (RTSTAT-10) No routable loads - 16 net(s) have no routable loads. The problem bus(es) and/or net(s) are sw[0]_IBUF, sw[1]_IBUF, sw[2]_IBUF, sw[3]_IBUF, sw[4]_IBUF, sw[5]_IBUF, sw[6]_IBUF, sw[7]_IBUF, sw[8]_IBUF, sw[9]_IBUF, sw[10]_IBUF, sw[11]_IBUF, sw[12]_IBUF, sw[13]_IBUF, sw[14]_IBUF (the first 15 of 16 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 18 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./sdIO.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/physics/Labs/week6/week6_20181030_project1_serialdataIO/week6_20181030_project1_serialdataIO.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Mar 19 15:29:02 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1495.840 ; gain = 383.762 ; free physical = 4592 ; free virtual = 14134
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 19 15:29:02 2019...

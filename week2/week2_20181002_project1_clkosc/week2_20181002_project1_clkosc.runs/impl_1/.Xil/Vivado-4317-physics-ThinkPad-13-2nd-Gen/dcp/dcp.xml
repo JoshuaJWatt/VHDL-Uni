@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Checkpoint Version="4" Minor="0">
+	<BUILD_NUMBER Name="1215546"/>
+	<FULL_BUILD Name="SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015"/>
+	<Part Name="xc7a35tcpg236-1"/>
+	<Top Name="clkosc"/>
+	<DisableAutoIOBuffers Name="0"/>
+	<OutOfContext Name="0"/>
+	<File Type="XDC" Name="clkosc.xdc" ModTime="1538486173"/>
+	<File Type="EDIF" Name="clkosc.edf" ModTime="1538486173"/>
+	<File Type="VERILOG_STUB" Name="clkosc_stub.v" ModTime="1538486173"/>
+	<File Type="VHDL_STUB" Name="clkosc_stub.vhdl" ModTime="1538486173"/>
+	<File Type="XN" Name="clkosc.xn" ModTime="1538486173"/>
+	<File Type="XDEF" Name="clkosc.xdef" ModTime="1538486173"/>
+	<File Type="INCR" Name="clkosc.incr" ModTime="1538486173"/>
+	<File Type="PSR" Name="clkosc.psr" ModTime="1538486173"/>
+	<File Type="WDF" Name="clkosc.wdf" ModTime="1538486173"/>
+</Checkpoint>
+

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Tue Nov 20 17:52:40 2018
+# Process ID: 4866
+# Log file: /home/physics/Labs/week8/week8_20181020_project2_updowncount/week8_20181020_project2_updowncount.runs/impl_1/updowncount.vdi
+# Journal file: /home/physics/Labs/week8/week8_20181020_project2_updowncount/week8_20181020_project2_updowncount.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source updowncount.tcl -notrace
